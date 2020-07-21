@@ -1,0 +1,31 @@
+# Harten et al. 2020, Science
+\chaptermark{The ontogeny of a bat cognitive map}
+
+*The ontogeny of a mammalian cognitive map in the real world* [@harten2020ontogeny]
+
+- *notes taken on 2020-07-16*
+
+## Introduction, Methods, Results
+- Whether animals navigate using 'maps'or not remains a question. The ability to take shortcuts, or direct routes between two points is a hallmark of map based navigation. 
+- The main problem with studying animal namvigation in the wild is that we can never be sure that the animal has not taken an apparent 'shortcut' before. 
+- authors were able to GPS track 22 young Egyptian Fruit Bats (*Rousettus aegeyptiacus*) from their first flight out of the roost
+- Young bats increased their home range over the course of ~70 nights, by which they had the same home range size as an adult. 
+- Individuals showed two types of broad flight behaviour over a night, 'exploratory', where they explored for new trees, and nights where they visited prviously visted trees. 
+- Evidence to support the fact that the shortcuts were intentional:
+  - shortcut were as straight as familiar routes ('commutes')
+  - individuals seem to head in the direction of their target from the start of the 'shortcut'
+  - the 'shortcuts' could not be replicated by a random correlated walk (*this seems like a bit of a straw man null model ([link](https://www.fharrell.com/post/nhst-never/)), especially since the data is clearly so directional. The authors also specifically mention 'but without any navigational goal'*)
+- *Bats performed both shortcuts and long-cuts from their first day outside,* - this is pretty impressive, but this also makes me think that the bats may actually be relying on a kind of path integration. Is their apatial memory so good that they can start mapping things over the course of one night? Is it possible that the bats may actually be using a beacon-type stategy to find their way around?
+- Authors rule out olfaction and sound based cues by comparing wind direction and actual recordings made on the backpack tags. Both don't show support. 
+- *'Bats that were closer to the translocation release point before the translocation night did not necessarily navigate home better, once again contradicting the template-matching hypothesis'* , the authors also go on to follow and say that bats that flew higher were better able to find their way back. This actually doesn't rule out the template matching hypothesis either, because it might just mean that bats that flew higher had larger access to the area below, to form a 'higher SNR' template perhaps...
+- The authors do also admit that the navigation behaviou they observed may be a result of multiple navigation strategies: *'..., navigation is a complex behavior that probably does not always rely on a single strategy'*
+- 
+
+
+
+### Comments
+- 'How animals navigate over large-scale environments remains a riddle', first line of the abstract starts with a rather bold statement. Is this statement really true for all animals, am under the impression that there is a large body of work for at least some animals. 
+-  '*We documented how young pupsdeveloped their visual-based map*' - interesting, does this mean, echolocation develops later, or that the bats are known to use primarily vision for their navigation?
+- Remember listening to a talk by Lee Harten in Konstanz ASAB, where she also presented work on the flight behaviour of the mother, who carried her pups around, and how the mother used to leave the pup in one tree, and so on. Do the authors discuss the implications of this type of memory on the shortcut taking ability of the young bats? *Yes, the authors have taken care of this, in the SI, they clearly state the mother and the pups were brought into an indoor facility, and the pups were kept indoors until they could fly*
+- *What about bats flying together?*, or encountering each other? Their inhourse colony data kind of excludes this idea because the individual bats arrive alone, and are spaced b a few minutes. This is not the most rigorous evidence, but is still pretty indicatibe, eg. even in Orlova Chuka (and other caves), you can see the bats arrive alone in the morning. Howeer, this still doesn't really exclude the fact that bats may be encountering each other at some point over the course of the night. 
+- 

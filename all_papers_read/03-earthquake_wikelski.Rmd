@@ -1,0 +1,40 @@
+# Wikelski et al. 2020 {#wikelskiearthquake}
+
+*Potential short-term eathquake forecasting by farm animal monitoring* [@wikelskiearthquake2020]
+
+- weird animal behaviour just before earthquakes habe been reported, including dramatic cases where snakes and rats came out of their winter burrows during the winter in the 1975 Haicheng earthquake
+
+- finding reliable changes in animal behaviour is tough because animal the animal behaviour needs to be monitored before and during the earthquake. 
+
+- Authors were able to overcome some of the limitations in the data this time by tagging multiple farm animals with high-resolution GPS tags that were equipped with many types of sensors
+
+- Authors measured the behaviour of animals at the M6.6 Norcia earthquake that happened on 2016
+
+## Methods 
+
+- Animals chosen from a farm based on which ones the animals thought were most sensitive to the earthquakes. 
+
+- Two tagging periods, once before + during the earthquake, once after
+
+## Data description
+- *Between ..., the animals experienced a total of 5,304 earthquakes with M > 0.4 ...and from ... a total of 12,948* ... didn't realise that earthquakes were so frequent in some areas. 
+
+- The 'hypocenters' of the earthquakes were anywhere between 5-28 km from the farm --*all relatively close by!*
+
+### Results 
+
+- Find a negative correlation between time of increased animal activity and earthquake intensity. For earthquakes $\geq$ 4 M, the animals responded earlier to quakes that were closer to the farm, and later to those that were further away from the farm. 
+
+- "Warning times" ranged from 1-15 hours
+
+- Animals seemed to be more sensitive to earthquakes in closed buildings - but there may be a seasonal factor in the observations too
+
+- What are the possible cues the animals are using to detect/respond to these earthquakes
+    - The inverse relation hints at a diffusive type process. "air      ionization at pressurised rock surfaces" -- diffusing into the      air, to which the animals may be responding to. 
+
+### Overall thoughts 
+
+- very intersting paper, which quantifies something which has been known but has now been studied in greater detail through this new technology. 
+
+- authors also suggest a future experimental setup where a series of animal moinorting stations could be used to predict the position and time of arrival of an earthquake. 
+

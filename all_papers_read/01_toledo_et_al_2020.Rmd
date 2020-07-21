@@ -1,0 +1,46 @@
+---
+title: "Cognitive map-based  navigation in wild bats revealed by a new high- throughput tracking system "
+author: "Thejasvi Beleyur"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Toledo et al. 2020, Science
+\chaptermark{cognitive maps in bats with high throughput tracking}
+
+*Cognitive map–based navigation in wild bats revealed by a new high-throughput tracking system.* [@toledo2020cognitive]
+
+- *notes taken on 2020-07-14*
+
+## Introduction
+
+- map based navigation goes beyond just simple modes eg. beacon following or landmark based navigation. 
+- bats are known to return to their normal sites even after displacement, which suggests 'map-and-compass' navigation style
+- Authors' previous results showed that fruit bats flew straight paths, but this was limited to a few nights of data. 
+- In this study, authors managed to study 172 bats over a cumulative of 3449 nights. 
+
+## Methods
+-  *ATLAS* - a reverse GPS system, where the animal wears a tag that emits a signal which is received by multiple ground stations - and thus using TOADs, the animal can be detected. 
+- ATLAS coverage region is ~88,200 hectares (or an area that's 29X29km big!!)
+- bats tagged, and all fruit trees within a given region recorded. 
+- Also performed translocation experiments. Each bat was translocated to the periphery of its normal foraging area, but within detection range of their foraging area
+- Also performed time-lag embedding to understand how complex the navigational mechanism is 
+
+## Results
+- Bats exhibited straight tracks, which is indicative of goal-directed behabiou 
+- Each bat had its favourite tree, and visited it every night, and even visited it from multiple directions of arrival
+- Solid evidence for a cognitive map is when an animal moves between two points that can't be detected/seen/observed from each other (ie. it requires a kind of 'rigorous' mapping)
+- 4.3% of all tracks,and 70/172 bats actually showed such shortcuts
+- There was no difference in the rate at which shortcuts happened between the age groups of bats tagged
+- *following a conspecific* -- they talk about it by saying that in their dataset, they didn't see individuals flying close together - but they only tagged 172 bats of ??? thousand in the whole population 
+- Translocated bats were able to return to their normal foraging area 
+- Time-lag embedding showed a high-dimensional correlation (?) indicating there must be many difference navigational factors
+    - If bats were following a simple         navigational route, they might always arrive and depart from the same direction - but the authors don't see this. 
+    - Authors don't seem convinced about the idea of an olfactory map 
+    - Authors also rule out the idea of pure path integration because they show that many bats returned to a different cave than the one they started out the evening from 
+    - 
+### Comments
+- Fig 2E: why would you use the p-value to show the *absence* of an effect? The p-value per se is hinged on so many other factors (eg.power, effect size, sample size), why not just report the raw data
+- 
+

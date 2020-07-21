@@ -1,0 +1,324 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Notes of all papers read so far},
+  pdfauthor={Thejasvi Beleyur},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Notes of all papers read so far}
+\author{Thejasvi Beleyur}
+\date{Last Updated : 2020-07-21}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{what-this-book-is-about}{%
+\chapter*{What this book is about}\label{what-this-book-is-about}}
+\addcontentsline{toc}{chapter}{What this book is about}
+
+This book is a compilation of all the notes I will be making for the papers that I read from now.
+I've been realising my paper notes are scattered everywhere, across multiple folders and multiple computers,
+this is my attempt at trying to unify everything into one place.
+
+\hypertarget{toledo-et-al.-2020-science}{%
+\chapter{Toledo et al.~2020, Science}\label{toledo-et-al.-2020-science}}
+
+\chaptermark{cognitive maps in bats with high throughput tracking}
+
+\emph{Cognitive map--based navigation in wild bats revealed by a new high-throughput tracking system.} \citep{toledo2020cognitive}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-07-14}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{itemize}
+\tightlist
+\item
+  map based navigation goes beyond just simple modes eg. beacon following or landmark based navigation.
+\item
+  bats are known to return to their normal sites even after displacement, which suggests `map-and-compass' navigation style
+\item
+  Authors' previous results showed that fruit bats flew straight paths, but this was limited to a few nights of data.
+\item
+  In this study, authors managed to study 172 bats over a cumulative of 3449 nights.
+\end{itemize}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{ATLAS} - a reverse GPS system, where the animal wears a tag that emits a signal which is received by multiple ground stations - and thus using TOADs, the animal can be detected.
+\item
+  ATLAS coverage region is \textasciitilde88,200 hectares (or an area that's 29X29km big!!)
+\item
+  bats tagged, and all fruit trees within a given region recorded.
+\item
+  Also performed translocation experiments. Each bat was translocated to the periphery of its normal foraging area, but within detection range of their foraging area
+\item
+  Also performed time-lag embedding to understand how complex the navigational mechanism is
+\end{itemize}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\begin{itemize}
+\item
+  Bats exhibited straight tracks, which is indicative of goal-directed behabiou
+\item
+  Each bat had its favourite tree, and visited it every night, and even visited it from multiple directions of arrival
+\item
+  Solid evidence for a cognitive map is when an animal moves between two points that can't be detected/seen/observed from each other (ie. it requires a kind of `rigorous' mapping)
+\item
+  4.3\% of all tracks,and 70/172 bats actually showed such shortcuts
+\item
+  There was no difference in the rate at which shortcuts happened between the age groups of bats tagged
+\item
+  \emph{following a conspecific} -- they talk about it by saying that in their dataset, they didn't see individuals flying close together - but they only tagged 172 bats of ??? thousand in the whole population
+\item
+  Translocated bats were able to return to their normal foraging area
+\item
+  Time-lag embedding showed a high-dimensional correlation (?) indicating there must be many difference navigational factors
+
+  \begin{itemize}
+  \item
+    If bats were following a simple navigational route, they might always arrive and depart from the same direction - but the authors don't see this.
+  \item
+    Authors don't seem convinced about the idea of an olfactory map
+  \item
+    Authors also rule out the idea of pure path integration because they show that many bats returned to a different cave than the one they started out the evening from
+  \item ~
+    \hypertarget{comments}{%
+    \subsection{Comments}\label{comments}}
+  \end{itemize}
+\item
+  Fig 2E: why would you use the p-value to show the \emph{absence} of an effect? The p-value per se is hinged on so many other factors (eg.power, effect size, sample size), why not just report the raw data
+\item
+\end{itemize}
+
+\hypertarget{harten-et-al.-2020-science}{%
+\chapter{Harten et al.~2020, Science}\label{harten-et-al.-2020-science}}
+
+\chaptermark{The ontogeny of a bat cognitive map}
+
+\emph{The ontogeny of a mammalian cognitive map in the real world} \citep{harten2020ontogeny}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-07-16}
+\end{itemize}
+
+\hypertarget{introduction-methods-results}{%
+\section{Introduction, Methods, Results}\label{introduction-methods-results}}
+
+\begin{itemize}
+\item
+  Whether animals navigate using 'maps'or not remains a question. The ability to take shortcuts, or direct routes between two points is a hallmark of map based navigation.
+\item
+  The main problem with studying animal namvigation in the wild is that we can never be sure that the animal has not taken an apparent `shortcut' before.
+\item
+  authors were able to GPS track 22 young Egyptian Fruit Bats (\emph{Rousettus aegeyptiacus}) from their first flight out of the roost
+\item
+  Young bats increased their home range over the course of \textasciitilde70 nights, by which they had the same home range size as an adult.
+\item
+  Individuals showed two types of broad flight behaviour over a night, `exploratory', where they explored for new trees, and nights where they visited prviously visted trees.
+\item
+  Evidence to support the fact that the shortcuts were intentional:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    shortcut were as straight as familiar routes (`commutes')
+  \item
+    individuals seem to head in the direction of their target from the start of the `shortcut'
+  \item
+    the `shortcuts' could not be replicated by a random correlated walk (\emph{this seems like a bit of a straw man null model (\href{https://www.fharrell.com/post/nhst-never/}{link}), especially since the data is clearly so directional. The authors also specifically mention `but without any navigational goal'})
+  \end{itemize}
+\item
+  \emph{Bats performed both shortcuts and long-cuts from their first day outside,} - this is pretty impressive, but this also makes me think that the bats may actually be relying on a kind of path integration. Is their apatial memory so good that they can start mapping things over the course of one night? Is it possible that the bats may actually be using a beacon-type stategy to find their way around?
+\item
+  Authors rule out olfaction and sound based cues by comparing wind direction and actual recordings made on the backpack tags. Both don't show support.
+\item
+  \emph{`Bats that were closer to the translocation release point before the translocation night did not necessarily navigate home better, once again contradicting the template-matching hypothesis'} , the authors also go on to follow and say that bats that flew higher were better able to find their way back. This actually doesn't rule out the template matching hypothesis either, because it might just mean that bats that flew higher had larger access to the area below, to form a `higher SNR' template perhaps\ldots{}
+\item
+  The authors do also admit that the navigation behaviou they observed may be a result of multiple navigation strategies: \emph{`\ldots, navigation is a complex behavior that probably does not always rely on a single strategy'}
+\item
+\end{itemize}
+
+\hypertarget{comments}{%
+\subsection{Comments}\label{comments}}
+
+\begin{itemize}
+\item
+  `How animals navigate over large-scale environments remains a riddle', first line of the abstract starts with a rather bold statement. Is this statement really true for all animals, am under the impression that there is a large body of work for at least some animals.
+\item
+  `\emph{We documented how young pupsdeveloped their visual-based map}' - interesting, does this mean, echolocation develops later, or that the bats are known to use primarily vision for their navigation?
+\item
+  Remember listening to a talk by Lee Harten in Konstanz ASAB, where she also presented work on the flight behaviour of the mother, who carried her pups around, and how the mother used to leave the pup in one tree, and so on. Do the authors discuss the implications of this type of memory on the shortcut taking ability of the young bats? \emph{Yes, the authors have taken care of this, in the SI, they clearly state the mother and the pups were brought into an indoor facility, and the pups were kept indoors until they could fly}
+\item
+  \emph{What about bats flying together?}, or encountering each other? Their inhourse colony data kind of excludes this idea because the individual bats arrive alone, and are spaced b a few minutes. This is not the most rigorous evidence, but is still pretty indicatibe, eg. even in Orlova Chuka (and other caves), you can see the bats arrive alone in the morning. Howeer, this still doesn't really exclude the fact that bats may be encountering each other at some point over the course of the night.
+\item
+\end{itemize}
+
+\hypertarget{wikelskiearthquake}{%
+\chapter{Wikelski et al.~2020}\label{wikelskiearthquake}}
+
+\emph{Potential short-term eathquake forecasting by farm animal monitoring} \citep{wikelskiearthquake2020}
+
+\begin{itemize}
+\item
+  weird animal behaviour just before earthquakes habe been reported, including dramatic cases where snakes and rats came out of their winter burrows during the winter in the 1975 Haicheng earthquake
+\item
+  finding reliable changes in animal behaviour is tough because animal the animal behaviour needs to be monitored before and during the earthquake.
+\item
+  Authors were able to overcome some of the limitations in the data this time by tagging multiple farm animals with high-resolution GPS tags that were equipped with many types of sensors
+\item
+  Authors measured the behaviour of animals at the M6.6 Norcia earthquake that happened on 2016
+\end{itemize}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\begin{itemize}
+\item
+  Animals chosen from a farm based on which ones the animals thought were most sensitive to the earthquakes.
+\item
+  Two tagging periods, once before + during the earthquake, once after
+\end{itemize}
+
+\hypertarget{data-description}{%
+\section{Data description}\label{data-description}}
+
+\begin{itemize}
+\item
+  \emph{Between \ldots, the animals experienced a total of 5,304 earthquakes with M \textgreater{} 0.4 \ldots and from \ldots{} a total of 12,948} \ldots{} didn't realise that earthquakes were so frequent in some areas.
+\item
+  The `hypocenters' of the earthquakes were anywhere between 5-28 km from the farm --\emph{all relatively close by!}
+\end{itemize}
+
+\hypertarget{results}{%
+\subsection{Results}\label{results}}
+
+\begin{itemize}
+\item
+  Find a negative correlation between time of increased animal activity and earthquake intensity. For earthquakes \(\geq\) 4 M, the animals responded earlier to quakes that were closer to the farm, and later to those that were further away from the farm.
+\item
+  ``Warning times'' ranged from 1-15 hours
+\item
+  Animals seemed to be more sensitive to earthquakes in closed buildings - but there may be a seasonal factor in the observations too
+\item
+  What are the possible cues the animals are using to detect/respond to these earthquakes
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The inverse relation hints at a diffusive type process. ``air ionization at pressurised rock surfaces'' -- diffusing into the air, to which the animals may be responding to.
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{overall-thoughts}{%
+\subsection{Overall thoughts}\label{overall-thoughts}}
+
+\begin{itemize}
+\item
+  very intersting paper, which quantifies something which has been known but has now been studied in greater detail through this new technology.
+\item
+  authors also suggest a future experimental setup where a series of animal moinorting stations could be used to predict the position and time of arrival of an earthquake.
+\end{itemize}
+
+\hypertarget{applications}{%
+\chapter{Applications}\label{applications}}
+
+Some \emph{significant} applications are demonstrated in this chapter.
+
+\hypertarget{example-one}{%
+\section{Example one}\label{example-one}}
+
+\hypertarget{example-two}{%
+\section{Example two}\label{example-two}}
+
+\hypertarget{final-words}{%
+\chapter{Final Words}\label{final-words}}
+
+We have finished a nice book.
+
+  \bibliography{book.bib}
+
+\end{document}
