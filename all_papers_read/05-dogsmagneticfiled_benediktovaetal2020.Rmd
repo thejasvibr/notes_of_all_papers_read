@@ -2,6 +2,8 @@
 
 *Magnetic alignment enhances homing efficiency of hunting dogs* [@benediktova2020magnetic]
 
+- *Notes taken on 2020-07-22*
+
 - 'homing' behaviour has been shown in many animals, and could be driven by multiple cues. Homing behaviour in non-migratory species still needs to be excplored more. 
 - Reports of dogs that found their way back even when displaced beyond their usual home range, and without access to familiar visual cues.
 - Hunting dogs have been bred by humans to chase game and then return to the start point if not followed by the hunter. These 'hunts' can ve a few hundreds to thousands of meter long. 

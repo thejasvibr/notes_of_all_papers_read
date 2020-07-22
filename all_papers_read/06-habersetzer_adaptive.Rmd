@@ -1,0 +1,26 @@
+# Habersetzer 1981 {#habersetzermadurai}
+
+*Adaptive echolocation sounds in the bat Rhinopoma hardwickei* [@habersetzer1981adaptive]
+
+- *Notes taken on 2020-07-22 (TO BE COMPLETED!!)*
+
+- *Rhinopoma hardwickei* behaviour studied as they emerge from their caves. 
+
+## Methods 
+- Speed of the bat flight measured with a stroboscipic camera
+- Echolocation calls recorded with a B & K microphone placed at the cave entrance. 
+- *R. hardwickei* lives relatively close to the cave entrance, and are found with other batr species too. The bats flew at an altidtude of around 10-15metres above the ground
+- Bats began to return to their roosts around 3:00-3:30 in the morning, but most of them returned later between 4:30-5:45 am. 
+
+## Results
+-  The author showed (i guess for the first time then) that *R. hardwickei* can actually modulate its echolcoation calls, ie. by showing that the calls change over the course of a landing from classical quasi-CF to vey FM
+- During emergence, bats only emitted FM calls of ~3ms duration
+- Emerging clusters seemed to have a preferred direction, while single bats that flew out didn't seem to have any preferred flight direction 
+- Single bats also seemed to emit CF type calls, in contrast to bats that were flying in groups 
+- Groups of bats sometimes formed over foraging grounds and in the early morning at the cave entrance itself. The bats in these groups emitted CF type calls. 
+- INdividual bats in these groups seemed to emit calls t unique CF frequencies
+- 
+
+## Discussion
+
+## Overall thoughts / Comments

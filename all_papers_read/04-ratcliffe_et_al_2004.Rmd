@@ -1,0 +1,35 @@
+# Ratcliffe et al. 2004, Can. J. Zool.
+\chaptermark{Conspecifics influence call design}
+
+*Conspecifics influence call design in the Brazilian free-tailed bat, Tadarida brasiliensis* [@ratcliffe2004conspecifics]
+
+- *notes taken on 2020-07-21*
+
+## Introduction
+- echolocation is pretty flexible and the emitted calls vary a lot based on the type of prey being caught, and the presence of conspecifics
+- This paper is a kind of offspring of another (Avila-Flores 2003), where the authors saw that there was more call variation when bats flew together than when alone. 
+- Authors try to estimate this variation by comparing observed pairs of bat calls and 'virtual' pairs of bat calls.
+
+## Methods
+- Free flying *Tadarida brasiliensis* recorded in three locations in Mexico City, of bats flying over a lake, and two others in open areas (park and city square)
+- 30 sequences from each location obtained (15 single bat passes + 15 paired passes). 
+- Authors specifically chose call sequences with no overlap of bat calls. 
+
+## Analysis
+- To compare the single vs paired call behaviour, the difference in the mean values was used
+- The difference in the mean, $\Delta_{mean}$ was used to compare if a bat showed alterations to its echolocation when alone vs. when with another bats. 
+- To understand if bats actually altered their call parameters when flying in groups the authors calculated the pair difference $bat1_{measurement}-bat2_{measurement}$ for actual observed pairs of bat call sequences, and those of virtual pairs. 
+- The pair difference was calculated by subtracting the means of the $bat1_{measurement}$ and $bat2_{measurement}$
+
+## Results
+- Authors didn't find any statistical difference in call parameters across locations and so decided to pool them all together (and thus used single bat call sequences from multiple locations while making virtual pairs). (*See comments*)
+- Authors found no inter-individual call differences across observed and virtual pairs for the parameters 1) call duration 2) bandwidth , and found differences in the peak frequency. (*See comments*)
+- The authors also saw social calls in paired audio files. 
+- The authors are indeed careful while ending '*To be even-handed....changes in peak frequency which we found...are neither jamming avoidance nor air traffic control, but serve another and as yet undetermined communicative function*'
+
+### Comments
+- authors state *'Although referred to as jamming avoidance.., support for this interpretation is not as strong as that for the jamming avoidance response in electric fish'*. They also go on to state that labortatory studies seem to have 'met with some success'. In general, does this support the fact that bats in the field may actually not be showing dramatic changes in calls at all - it's only when they're put into a quiet unusual lab context that they begin to show changes. Perhaps, this strong response is seen because the animals have gotten used to flying under quiest conditions, and are now suddenly challenged?
+- how do the authors actually know that the two bats in a paired call sequence were flying together/in close proximity? '*We assinged each recorded seequence to one of two situations.....and two bats flying close proximity*' -  this is a rather vague definition. With a single bat detector, it is not possible to track the bats in 3d, at most one can check if the waveforms of the two bat calls are similar, but here too it only means that the two bats were flying in the same radius from the bat detector. It is somewhat crude, though admittedly, the best possible criteria given the current instrument. 
+- Authors actually pooled call sequences from multiple locations and made virtual call pairs from this pool. This will actually have the effect of *increasing* the diversity of the observed data? Also, it is known from tracking studies that individual bats tend of have favourit foraging sites - and so in some sense, it is expected that there will be a 'local' flavour to the data. It would have been nice to see the authors perform the same analysis without pooling across locations. 
+- The authors find differences in peak frequency between real and virtual pairs. This could really be an effect of where the bats were flying while in pairs vs when they were alone. The simplest explanation is that the bats may be flying further away from the microphone, thus leading to different SNRs at recording - which then leads to different peak frequencies. The difference in the peak frequency could really be an artifact and not a real effect. Moreover, given the authors state that they do see social calls, the line between social call and echolocation call is a thin one, which means, perhaps the authors are seeing this effect? The authors state this themselves *'Our recordings suggest a continuum in call features between echolocation and social calls...'*
+- 
