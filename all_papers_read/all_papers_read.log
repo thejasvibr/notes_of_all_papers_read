@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.12.14)  21 JUL 2020 15:04
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.12.14)  22 JUL 2020 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,6 +907,12 @@ LaTeX Warning: Label `results' multiply defined.
 
 LaTeX Warning: Label `comments' multiply defined.
 
+
+LaTeX Warning: Label `methods' multiply defined.
+
+
+LaTeX Warning: Label `results' multiply defined.
+
 )
 \openout1 = `all_papers_read.aux'.
 
@@ -1294,27 +1300,33 @@ Chapter 4.
 
 ]
 Chapter 5.
-(./all_papers_read.bbl [19] [20
+[19] [20]
+Missing character: There is no ≥ in font [lmroman10-italic]:mapping=tex-text;!
+[21] [22
+
+]
+Chapter 6.
+(./all_papers_read.bbl [23] [24
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
-[21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 491.
+[25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 491.
 (./all_papers_read.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 397.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 397.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 491.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 491.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 491.
  ) 
 Here is how much of TeX's memory you used:
- 25820 strings out of 494988
- 469753 string characters out of 6178637
- 678843 words of memory out of 5000000
- 29416 multiletter control sequences out of 15000+600000
+ 25828 strings out of 494988
+ 469925 string characters out of 6178637
+ 679051 words of memory out of 5000000
+ 29424 multiletter control sequences out of 15000+600000
  536593 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  58i,6n,117p,10410b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on all_papers_read.pdf (21 pages).
+Output written on all_papers_read.pdf (25 pages).
