@@ -1,0 +1,35 @@
+# Pye 1972, J. Zool. Lond
+
+\chaptermark{Bimodal CF calls in some hipposiderids}
+
+*Bimodal distribution of constant frequencies in some hipposiderid bats (Mammalia: Hipposideridae)* [@pye1972bimodal]
+
+- *notes taken on 2020-07-23* (incomplete notes, left the paper halfway through)
+
+## Introduction
+
+- Bats of one species seem to show echolocation in a 'common frequency band', ie. all measured bats calling within a 3kHz bandwidth
+- Schnitzler 1968 found a max of 2.5kHz deviation across *R. ferrumequinum* and *R. euryale*
+- Three species recorded in a cave in Kenya were however found to show 'sub-bands' with no individuals calling in between two main call frequencies. 
+- 
+
+## Methods
+
+- CF peak frequency determined through Lissajous figures (see Comments)
+
+## Results
+
+- *Hipposideros commersoni*:
+  - Bat seemed to emit somewhat higher frequency than expected from its size
+  - Individuals either emitted at 56 or 66 kHz
+  - Also measuremed the inter-nostril difference, as this is known to be ~0.5X the emitted wavelength - the nostril lengths were indeed different 
+- *Triaenops afer*
+  - This species also showed a bimodal distribution of CF at either 79 or 88 kHz
+  - *Here it gets interesting!* When individual animal call traces were placed over each other, then the calls seemed to be somewhat continuously spaced. But when a group of bats were flown together, bats seems to emit calls clearly in one of two sub-bands
+  - Fig. 2 -- could the difference in the 'combined frequency profile' vs individual frequencies just be a function of flight speed. Maybe when the bats are palced together in a cage, they tend to overall fly a bit faster/slower -- leading to this difference in the emitted frequencies by individuals?
+  - 
+
+### Comments
+
+- interesting to see how tricky it was back then to determine the peak CF frequency, something we do so routinely with a quick FFT nowadays. Pye had to visualise Lissajous figures, (comparing the CF call recordings with signals of known frequency )
+- 
