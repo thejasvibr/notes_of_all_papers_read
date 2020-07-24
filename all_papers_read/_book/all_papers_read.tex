@@ -707,43 +707,178 @@ this is my attempt at trying to unify everything into one place.
 
 \chaptermark{Horseshoe bat source levels in Bulgaria}
 
-\emph{Variability in Echolocation Call Intensity in a Communityof Horseshoe Bats: A Role for Resource Partitioning orCommunication? (}Incomplete\emph{)} \citep{schuchmannsiemers2010a}
+\emph{Variability in Echolocation Call Intensity in a Communityof Horseshoe Bats: A Role for Resource Partitioning orCommunication?} \citep{schuchmannsiemers2010a}
 
 \begin{itemize}
 \tightlist
 \item
-  \emph{notes taken on 2020-07-23}
+  \emph{notes taken on 2020-07-23,24}
 \end{itemize}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
 \begin{itemize}
-\tightlist
 \item
   Authors measure the source levels of a whole community of horseshoe bats near and around the Tabachka field station. They record call levels of 5 species.
 \item
   The CF distributions of the four-five species that geographically overlap in Europe, also overlap spectrally
 \item
   \emph{Rhinolophus mehelyi} can tell apart conspecific calls in the midst of other overlapping species (See comments)
+\item
+  Do some bats (that are calling at higher than allometrically predicted frequencies) evolve towards a `private frequency' channel?
+\item
+  Authors look at whether \emph{R. mehelyi} produce louder calls to compensate for decrease in detection distance because they call at a higher call frequency for their given body size (\protect\hyperlink{com_shuchsiem}{Comments 2})
+\item
+  The questions the authors ask are:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Are the call intensitites different across species, and could call intensities play a role in nice differentiation (\protect\hyperlink{com_shuchsiem}{Comments 3})
+  \item
+    Does \emph{R. mehelyi}, the higher-than-allometrically predicted species, call at `especially high' call intensities? (\protect\hyperlink{com_shuchsiem}{Comments 4})
+  \item
+    How does max. call intensity vary with body size, sex -- and could it be used as an honest signal bats can use to identify conspecifics (\protect\hyperlink{com_shuchsiem}{Comments 5})
+  \end{itemize}
 \end{itemize}
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
 
-\hypertarget{results}{%
-\section{Results}\label{results}}
-
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
-
-\hypertarget{comments}{%
-\subsection{Comments}\label{comments}}
+\hypertarget{study-animals}{%
+\subsection{Study animals}\label{study-animals}}
 
 \begin{itemize}
 \tightlist
 \item
-  Need to read ref. 24, Schuchmann \& Siemers 2010 (Am. Nat.) - a habituation-dishabituation study
+  \emph{R. mehelyi, euryale, ferrumequinum, hipposideros} caught from the area around the field station, \emph{R. blasii} caught from the Eastern Rhodopes.
+\item
+  Bats recorded in a large-ish room (8x4x2.5m) (\protect\hyperlink{com_shuchsiem}{Comments 4}), and can thus be expected to emit louder calls than when in a cluttered environment
+\end{itemize}
+
+\hypertarget{call-intensitites-and-acoustic-analysis}{%
+\subsection{Call intensitites and acoustic analysis}\label{call-intensitites-and-acoustic-analysis}}
+
+\begin{itemize}
+\item
+  Done with a B \& K mic placed 1m away fromt he bat's head - \emph{this is a pretty neat and direct way to do it because this is a perching bat anyways!!} \ldots{} though, the clutter caused by the mic being right in front of the bat \ldots hmmm\ldots{}
+\item
+  There;s a large variation in the frequency resolution across the years. It also is a bit unclear whether the authors used an automatic or manual method -- though my current reading seems to suggest a semi-manual method to estimate the peak frequency of a call
+\item
+  To get call intensity, the authors seem to do a lot of call processing.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    FIR bandpass filter , with a 128 order bandpass filter(\protect\hyperlink{com_shuchsiem}{Comments 6}) and then proceeding to take the FFTs within the call\ldots.why do this when you can take the waveform value directly??)
+  \end{itemize}
+\item
+\end{itemize}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{overlap-of-frequency-bands}{%
+\subsection{Overlap of frequency bands}\label{overlap-of-frequency-bands}}
+
+\begin{itemize}
+\tightlist
+\item
+  species showed overlap in their CF frequencies
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{R. mehelyi, euryale, hipposideros} overlapped, while those of \emph{R. ferrumequinum} and \emph{R. hipposideros} were different
+  \end{itemize}
+\item
+  Statistically, the three overlapping species differed (but the sample sizes weren't too big either..)
+\end{itemize}
+
+\hypertarget{call-parameters}{%
+\subsection{Call parameters}\label{call-parameters}}
+
+\begin{itemize}
+\tightlist
+\item
+  No observed correlation between call intensity and call frequency
+\item
+  \emph{R. euryale} seemed to call 10-17 dB lower than the other species.
+\item
+  Intra-individual variation of 0-334 Hz across species
+\item
+  Intra-individual call intensity variation also of between 2.3 to 5.5 dB
+\end{itemize}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\begin{itemize}
+\tightlist
+\item
+  authors suggest call intensity can be an informative cue that can be used to assess species identity. They propose that perching bats may be able to reconstruct the position and `head-aim' of the other bat, and thus assess its source-level. \emph{While it may be informative to tell apart }R. mehelyi*, which calls fainter than others - there may actually be other cues eg. FM sweeps, or even more `voice' type characteristics embedded in the whole call that could be picked up by bats themselves?)
+\end{itemize}
+
+\hypertarget{com_shuchsiem}{%
+\subsection{Comments}\label{com_shuchsiem}}
+
+\begin{itemize}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Need to read ref. 24, Schuchmann \& Siemers 2010 (Am. Nat.) - a habituation-dishabituation study
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    How does the \emph{allometry} matter per se. The only thing that will matter for the detection distance is the source level and the emitted frequency (unclear)
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    It seems a bit tenuous, and obvious- but it's also hard to show a connection well?. Yes, low source level bats may only be able to detect insects from nearby, and high SL bats can detect insects from far away -- not sure, but it sounds vague
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{3}
+  \tightlist
+  \item
+    I don't necessarily see a reason for it to call at higher source levels than what other species with similar CF do\ldots{} not sure, why it would call at `especially high' call intensities.
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{4}
+  \tightlist
+  \item
+    Probably this is the `big flight room' at Tabachka?
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{5}
+  \tightlist
+  \item
+    Vaguely remember how using a very high order filter can mess with the signal structure itself (altering phases etc.). If the signal structure itself is altered so much, then what is the guarantee that the peak eq. source level obtained in this study is valid? If anything at all, the call intensitites reported in this study may actually be at the lower end of what is known because of the heavy filtering that has been done?
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{6}
+  \tightlist
+  \item
+    Odd grammar and typos in a bunch of places.
+  \end{enumerate}
 \end{itemize}
 
 \hypertarget{halsey-2019-biology-letters}{%
