@@ -1,0 +1,35 @@
+# Jones & Ransome 1993, Proc. R. Soc. Lond. B
+
+\chaptermark{R. ferumequinum CF stability}
+
+*Echolocation calls of bats are influenced by maternal effects and change over a lifetime* [@jonesransome1993]
+
+- *notes taken on 2020-07-23*
+
+## Introduction
+
+- *R. ferrumequinum* emits CF calls of ~50ms long at 83kHz. 
+
+## Methods
+
+- Ringed wild bats were captured and recorded as they echolocated. Overall, 386 bats were recorded in the hand. 
+- Bats ranged from 1-28 years old
+
+## Results
+
+- Age seemed increase the resting frequency (RF), with a high increase from yaer 1 to 2, and then a gradual increase. 
+- There was also a seasonal effect - where the lowest RFs were recorded during the winter, and highest values in summer.
+- The RF of infant bats were correlated with the RF of the mother (See comments)
+- The authors also find a correlation with the age of the mother and the sex of the infant on its RF. Pups born to younger mothers had higher RFs, than those born to older mothers
+
+## Discussion 
+
+- authors point out that changes in RF with season may have to do with body temperature - as even active bats may not be as warm as they are in the summer. 
+- The correlation between mother and pup RFs may be explained by some form of learning perhaps
+- changes in RF over age could be the result of hearing loss (neural/cochlear)
+
+### Comments
+
+- the x and y axed of Fig. 3 aren't equal make it hard to judge visually how strong the correlation is. Numbers-wise at least, the *r* value isn't particularly high.
+- back in 1993, the processing times were quick! The paper was received 1 Feb. 1993, and accepted on 16 Feb. 1993!!
+
