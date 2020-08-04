@@ -1,0 +1,31 @@
+# Halsey, Curran-Everett, Vowler, Drummond, 2015 *Nature Methods*
+
+\chaptermark{Fickle *p* values}
+
+*The fickle P value generates irreproducible results* [@halsey2015fickle]
+
+- *notes taken on 2020-07-24*
+
+## Introduction
+
+- p-values often used without understanding the statistical power in play 
+- statistical power is often only considered after an 'effect' could not be detected
+- unless statistical power is very high, p-values vary a lot from sample to sample 
+- Ronald Fisher actually intended p-values to be used as a continuous indication of support for the null hypothesis
+    - but, here too - if the statistical power is already low, no matter what - the p-value will not be reliable!!
+ 
+## statistical power is generally low --> p values can't be trusted
+- Even when statistical power is close to 90%, p-values are not stable
+- Considering that many studies are designed with 80% power, this means there is probably even more variation in p-values to be expected
+- low statistical power -----> low sample sizes --> higher data variability
+
+## Exaggerated effect sizes 
+
+- A low-power test will give a low p-value only when the samples are very unrepresentative (ie. come from the edges of the distribution) -- but it can definitely happen (Comments)
+
+
+### Comments
+
+- the possibility of extreme samples contributing to low p-values, may also lead to a dramatic effect size. In some sense, there may be no *statistical* way to overcome this problem - the only way to resolve this situation may be to increase sample size?
+- 
+

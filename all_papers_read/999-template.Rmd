@@ -1,0 +1,22 @@
+# AUTHORS ET AL. YYYY, *J. STHING. STHING.*
+
+\chaptermark{SHORT TITLE HERE}
+
+*BIG TITLE OUT HERE IN FULL* [@schuchmannsiemers2010a]
+
+- *notes taken on YYYY-MM-DD*
+
+## Introduction
+
+## Methods
+
+
+## Results
+
+
+## Discussion 
+
+
+### Comments
+
+

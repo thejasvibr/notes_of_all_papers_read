@@ -1,0 +1,61 @@
+# Halsey 2019, *Biology Letters*
+
+\chaptermark{Alternatives to *p*-value testing}
+
+*The reign of the p-value is over: what alternative analyses could we employ to fill the power vacuum?* [@halsey2019a]
+
+- *notes taken on 2020-07-24*
+
+## Introduction
+
+- The p value has been used and abused, and in some sense has contributed to the reproducibility crisis in science 
+- The p value is based on the null hypothesis being true, and therefore doesn;t actually provide any information on how true the alternate hypothesis is -- which is actually our question. 
+- If the p-value is 'high'/non-significant -- *it doesn't tell us anything because there is an open question if our method could pick up a difference given the current sample size?
+- **'*Moreover, with a big enough sample size, inevitably the null hypothesis will be rejected; perversely, a p-value based statistical result is as informative about our sampole as it is about our hypothesis*'** (See comments)
+- p-values can vary between replicates of the same study even when statistical power is high! (See comments)
+- interpreting p-values as signficant or not (dichotomously) encourages failed experiment replication --- hmmm
+- Even with 80% power ---> prob. of getting two studies/replicates significant is 0.64 (0.8$^{2}$), while getting even one of these two studies/replicates significant is 0.32($2\times0.8\times0.2$)
+
+- **'*th ep-value is typically highly imprecise about theamount of evidence against the null hypothesis, and thuspshould be considered as providing only loose, first passevidence about the phenomenon being studied*'**
+
+## Alternates to p-value testing:
+
+### P-value prediction interval
+- the p-value is attractive, and a nice objective indicator of evidence against the null hypothesis
+- author suggests presenting *variability* of p-values across samples, because p-values can be so variable : the 'p-value prediction interval' [Cumming 2008](http://methods.sagepub.com/journal-article/sage-quantitative-research-methods/replication_and_p_intervals_p_values_predict_the_future_only_vaguely_but_confidence_intervals_do_much_better/d36.xml)
+
+### Estimate likelihood of false positive
+- This method requires a prior 'feeling'/idea of how likely it is that there will be an effect , this is kind of hard to come by for observational studies, or those where there's no literature to say anything ??
+-  The author also provides an 'inverse' option, where the inputs are the obtained p-value + the power of the test. If the false positive risk is set at 5% ($\alpha=0.05$), then the tool will provide an estimate of your prior expectation that the treatment will have an effect
+
+## Effect sizes and confidence intervals
+
+- The effect size (differnce in mean between the groups) is easy to estimate - and a 95% confidence interval can be reported along with it. 
+- The confidence interval based approach with full reporting of the info prevents false claims from being made (yes/no effect)
+
+
+## Bayes factor: comparitive evidence of the null and alternate hypotheses
+
+- the controversy about the 'subjectivity' in defining the prior can be solved by running a sensitivity analysis that explores a range of prior definitions 
+- the 'simplified Bayes factor' (SIB) is an alternate index which can be used to assess (Seems to be more relevant for planned studies and their stopping rules, also see Comments)
+
+## Akaike information criterion
+
+- The AIC provides an idea of how well your model represents reality - and handles the tradeoff berween model complexity and over-fitting
+- AIC is nice to compare between models, but it doesn't provide an absolute estimate of which model is the best. Among the models that are under consideration, it may very well be the case that the one with the lowest AIC doesn't capture the variation in the data as well as the other models - a check of the model's actual fit still needs to be done. 
+ 
+## Conclusion
+
+- **'*Primarily, the argument goes, you should prioritize interpretation of graphical plots of your data, where possible, and treat statistical analyses as supporting or confirmatory information*'**
+
+
+
+### Comments
+- A low p-value can thus be a result of a high effect size for a given sample size, or a very large sample size for a given small effect size. So, how does one go about disentangling this issue then?? Perhaps with power analyses -- which then adds to the amount of work that needs to be done anyway..?
+- the p-value is not stable...hmm, even across replicates - this is kind of scary to know. ie. in [@halsey2015fickle], they state *'The reason for this is that unless statistical power is very high, the P value exhibits wide sample-to-sample variability and thus does not reliably indicate the strength of evidence against the null hypothesis'*, and *'If statistical power is limited, regardless of whether the P value returned from a statistical test is low or high, a repeat of the same experiment will likely result in a substantially different P value'*
+- Not sure how different this simplified Bayes factor is from a p-value - I also don't understand how it overcomes the problems associated with dichotomous type p-value testing. Moreover, if the p-value itself is 'fickle', then it will also result in unstable SIB estimates too -- how to overcome this problem...
+- haha, nice - the author also provides a link to another paper [Sneddon, Lewis, Bury 2017, J. Exp. Biol.](https://jeb.biologists.org/content/220/17/3007), where Box 2 has a template passage highlighting the problems of p-values! 
+
+
+
+

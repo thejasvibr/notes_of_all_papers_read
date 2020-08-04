@@ -1,0 +1,43 @@
+# Lakens, Daniel, blog post from *'The 20% statistician'*
+
+\chaptermark{Adjusting alpha for statistical tests}
+
+*Why you don't need to adjust your alpha level for all tests you'll do in your lifetime* [@daniellakensa_2016]
+
+- *notes taken on 2020-08-04*
+
+## Introduction
+
+- Take a case where people are randomly assigned into two groups, and two unrelated dependent variables are measured. The groups are compared. True positive of no effect on both the variables is: 0.95 X 0.95 = 0.9025. Probability of at least one of the variables showing up as significantly different is: 1 - 0.9025 = **0.0975** !! How to control such erroneous false positives?
+
+- There are a bunch of methods which can control the 'error rates':
+    1. Bonferroni correction
+    1. Holm-Bonferroni sequential procedure
+
+- When the # of statistical tests increase, it may be better to control false discovery rate, rather than error rates.
+
+## The Bonferroni correction
+ 
+- *'The Bonferroni correction controls the familywise error rate..'* [*what is family wise error rate - See* Comments]{#lakens_com}
+- *'..is not straight forward is that error control does not just aim to control the number of erroneous statistical inferences, but the number of erroneous theoretical inferences.'*. Is the author trying to say that corrections need to be done when a bunch of tests are trying to answer the same question, with a common dataset - don't fully understand
+- Experiment wise Type I error rates (*I guess this is the famous p value?*) can be calculated from the setup of the stats? The example given by the author here is in a 2x2x2 ANOVA (See [Comments 2]{#lakens_com}) - there are seven tests that are done, and so when a 0.05 $\alpha$ is used each time, this make the probability of getting at least one effect at least 30%. *([Comments 3]{#lakens_com})*
+
+- The author also gives a more experimental example. The case of comparing predictions from two theories. One theory predicts interaction in a 2x2 ANOVA, and the other doesn't predict an interaction, but at least one main effect. (A 2x2 ANOVA tests 3 null hypotheses, two main effects and one interaction).  
+- A naive way to approach the Bonferroni correction is to set the $\alpha$ to $\frac{\alpha}{3}$ 
+- But here the author points out that because theoretically the two theories predict different outcomes, the $\alpha$ also needs to corrected separately. Since Theory B predicts at least one significant main effect (out of 2 main effects) - we can set the new $\alpha$ to $\alpha /2$ and so if the p < $\alpha/2$ we will accept Theory B
+- Since Theory A predicts only one interaction being significant, we don't really need to correct for anything. ([Comments 4]{#lakens_com})
+- Maintaining a sensible $\alpha$ value with multiple testing corrections allows you to be wrong at most at the expected $\alpha$ rate.
+- Should you correct for all the tests you will do over your lifetime? Yes, but only if all the data/work you've done is going into testing one single theory !
+- 
+
+
+## Comments/Questions {#lakens_com}
+
+1.  what is a 'familywise error rate': The probability of making at least on Type I error (False Positive): $FWE \leq 1-(1-\alpha_{test})^{Number\ of\ comparisons}$. eg. at an $\alpha$ of 0.05 and with 10 tests, the $FWE$ is : $\leq (1-0.05)^{10}=0.401$ (thanks to this [page](https://www.statisticshowto.com/familywise-error-rate/))
+1. 2x2x2 ANOVA is when there are three variables and two groups in each variable. ie. imagine you're testing a drugs efficacy, and you have three variables (Thanks to this [page](https://www.graphpad.com/guides/prism/7/statistics/stat_what_is_three-way_anova_used_f.htm)) : sex, dosage level and treatment/control. Within Sex there's male and female, within dosage level there's high and low, and then there's treatment/control. There are seven p-values because it performs a series of comparisons within the 2x2x2 complex:
+    - 3 tests  comparing the groups within each of the variables (eg. male vs female, treatment vs control, high vs low)
+    - 3 tests testing two-way interactions: pool data from Sex, effect of treatment vs control in low and high dose groups 
+    - 1 test on three way interaction: *'there is no three way interaction among all three factors'*
+
+1. I get this example, within one statistical test, there are seven comparisons being made - and when each of these have an alpha value, there can be a false positive - what about when you are performing single comparisons of multiple variables from two groups?
+1. I guess one of the main issues that the author is trying to bring out is that by naively correcting and setting $\alpha$ values very low, we risk running into Type II (false negative) errors! By setting 

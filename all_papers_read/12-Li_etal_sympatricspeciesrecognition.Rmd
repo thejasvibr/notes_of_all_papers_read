@@ -1,0 +1,39 @@
+# Li et al. 2014, *Behav Ecol Sociobiol* (Incomplete)
+
+\chaptermark{Behavioural responses to sympatric echolocation calls}
+
+*Behavioral responses to echolocation calls from sympatric heterospecific bats: implication for interspecific competition* [@li2014behavioral]
+
+- *notes taken on 2020-07-27*
+
+## Introduction
+
+- sympatric species with simlar diets and ecologies could share information and gain mutual benefit through this process. Mutual recognition is required for mutual benefit to occur.
+- agression between species at the same trWophic level should be selected against by natural selection as it increases the risk of predation
+- In free-flying bats, species recognition has been shown to be related to simlarity in call structure and diet ecologies 
+- *'Interspecific recognition may thrterefore be necessary to adjust the strength of interspecific interactions'* - what is meant by this line - adjusted by whom?
+- the trophic niche index - how 'linear'/uniform is it as an index? 
+- Authors tested which bats responded to which bats, and checked if call similarity and trophic overlap explained the observed correlation 
+- 3 species were tested, among the 4 species that are commonly found together:
+    - *Rhinolophus macrotis*
+    - *R. macrotis*
+    - *R. lepidus*
+All the rhinolophid species were observed in the expeirments --but there were no *Asellia*'s in this experiment. ( *Asellia stoliczkanus*)
+
+ ([Comments 1](#com_libehav))
+
+
+## Methods
+
+- 
+
+## Results
+
+
+## Discussion 
+
+
+### Comments {#com_libehav}
+
+
+

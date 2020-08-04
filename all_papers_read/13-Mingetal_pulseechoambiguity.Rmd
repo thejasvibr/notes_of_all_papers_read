@@ -1,0 +1,69 @@
+# Ming et al. 2020, *PNAS* 
+
+\chaptermark{Modelling frequency hopping in echolocation}
+
+*How frequency hopping suppresses pulse-echo ambiguity in bat biosonar* [@Ming17288]
+
+- *notes taken on 2020-07-28*
+
+## Introduction
+
+- In cluttered environments, echoes that arrive after the next call can cause call-echo ambiguity. 
+- When interpulse interval (IPI) is > 'echo-epoch' (time taken for the last echoes in the acoustic scene to arrive, $\alpha$ 'depth' of the scene) - then there is no ambiguity
+- Echoes from the previous call that arrive can appear to be objects that are very close by.
+- However, in cluttered conditions, bats reduce their IPI to keep up the update rate, which means the chance of such ambiguities is higher. 
+- 'Frequency hopping' helps to overcome this call-echo matching problem. 
+- *Eptesicus fuscus* shows shifts of upto 5-7 kHz between one call to the next while doing this kind of echo hopping. However, even a shift of 5-7 kHz means an overlap of 70-80% from one call to the other ([Comments 1](#com_ming))
+
+### Quick primer on echo delay estimation
+
+- In manmade ranging systems (radar/sonar), all frequencies in a wideband sweep contribute equally to the matched filtering. 
+- In *E. fuscus*, the first harmonic is required for echoes need to have a first harmonic to be 'registered', but the second harmonic (FM2) plays a stronger role in modulating echo delay perception. 
+- Authors test the specific idea that even *within* the first harmonic itself, *E. fuscus* only needs a limited region of the FM1 to detect echoes. 
+
+## Methods
+
+- Authors test if 1) only the lowest paer of FM1 frequencies are required for delay perception 2) unclear what is being *tested* here..*'Second, the small, seemingly not very effective, size of the frequency hopping by just a few kilohertz ....suggests that the hypothesized necessity of these lowest FM1 frequencies may be the key to why the harmonics are processed asymmetrically'* 
+- More and more of the lower frequencies were filtered out and the bats were asked to detect the S+ ([Comments 3]{#com_ming})
+- If the authors want to understand which parts of the echo are important - why do they focus on an AFC (alternate forced choice) experiment where the task is to tell apart two echoes - with different arrival delays *and* different structures (single glint vs double glint) ([Comments 4]{#com_ming})
+- It seems like *both* phantom echoes were high/low passed filtered - but this isn't explicityly stated in the paper!
+- 4 *E. fuscus* were trained in an alternate force choice experiment
+- 
+
+
+## Results
+
+- the region between 29-30 kHz is important for the bats to tell apart S+ and S-
+- Confusing *'Finally, when all frequencies are removed from S+ by low-pass filtering at 20 kHz, there is no two-glint S+ at all,..'* - if 'all' frequencies are removed - there is no echo at all in principle, fo
+- '*..vast proportion of frequencies do not support perception of echo delay unless the critical frequencies of 25 to 30 kHz are present.*'
+- authors also cite previous studies where when FM bats were faced with CF playbacks, they responded strongly to playbacks between 24-28 kHz, and didn't respond at all when other frequencies were played back. 
+
+
+## Discussion 
+
+- The authors seem to discuss the implications of the last few kilohertz results into how frequency hopping works -- they haven't actually shown this directly through the experiments. The data only says the last few kilohertz is important for echo delay detection. 
+- The results indicate that the last few kilohertz is important - but at the same time don't point to a mechanism which allows the bat to detect echoes which are frequency shifted - how would the bat register the fact that the 'terminal frequency' has moved up after it's shifted its echolocation? This is not really discussed in the paper directly ?..
+
+
+## the SCAT model 
+
+- the SCAT model is a bio-inspired model which aims to mimic how the auditory system of bats work. 
+- delay perception is done by parallel bandpass filters which detect the time between sounds with energy in their bandpass region. Thus, they are able to tell the delay between call and echo fairly accurately. 
+- The idea the authors propose is essentially that the lower part of each call is the one that triggers echo detection. 
+- Imagine one call with terminal frequency at 20 kHz, and the next call with the terminal frequency at 25 kHz. Even if an echo from the previous call were to arrive - it'd have much lower frequencies than that of the current - call and wouldn't be 'sent' into the processing chain. ([Comments 5]{#com_ming})
+
+
+
+### Comments {#com_ming}
+
+1. How is this overlap actually calculated - it can be done in multiple ways...including/excluding the second harmonics etc..? As the authors themselves mention later - a shift of 5-7 kHz in the first harmonic corresponds to a shift of 10-14 kHz in the second harmonic. 
+2. Fig. 2 is the first figure that is referred in the paper (and the one that brings the phenomenon to the reader directly) - but, Fig.1 (related to a more technical point) is presented first - could have been rearranged. 
+3. S+ is introduced without any kind of explanation, and the figure is the main reference for the paper. This is kind of understandable given the word limits, but it's also kind of unfortunate because the reader's flow is interrupted each time by having to go back and forth between sections of the paper. 
+4. I'm  not able to understand why the authors trained the bats to distinguish two echoes that differ in two characteristics. Am wondering how this would affect what can actualy be said from the experiments. ie. the results could also be narrowly interpreted to say, 'bats require the lowest parts of their FM1 to tell apart a double glint echo from a single glint echo' ... It would have been cleaner if the authors had actually compared the bats ability to tell apart two echoes with the same structure, but arriving at different delays -- this would actually say something about what is required to detect an echo, rather than a double glint vs a single glint echo. The task is made *easier* by the introduction of such different properties *'..question is whether this easy task still is easy (sic) if the lowest fre quencies in FM1 are removed from the S+ echoes'*, but the point is that it may also muddle the interpretation? 
+5. There seems to be a disconnect between what was done and what is being discussed. What was shown is that the end frequencies are important for echo discrimination (the glint structure X different delays confuses things according to me). But what is being discussed is how the frequency hopping is reliant on the lower frequencies of each call - the authors haven't really 'shown' this experimentally - but suggest a model which may explain it. There's something that I can't put into words better - need to give this a second try again. 
+
+ 
+
+
+
+

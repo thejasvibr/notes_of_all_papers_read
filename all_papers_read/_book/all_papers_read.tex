@@ -73,7 +73,7 @@
 
 \title{Notes of all papers read so far}
 \author{Thejasvi Beleyur}
-\date{Last Updated : 2020-07-28}
+\date{Last Updated : 2020-08-04}
 
 \begin{document}
 \maketitle
@@ -1063,8 +1063,8 @@ this is my attempt at trying to unify everything into one place.
 \item
 \end{itemize}
 
-\hypertarget{li-et-al.-2014-behav-ecol-sociobiol}{%
-\chapter{\texorpdfstring{Li et al.~2014, \emph{Behav Ecol Sociobiol}}{Li et al.~2014, Behav Ecol Sociobiol}}\label{li-et-al.-2014-behav-ecol-sociobiol}}
+\hypertarget{li-et-al.-2014-behav-ecol-sociobiol-incomplete}{%
+\chapter{\texorpdfstring{Li et al.~2014, \emph{Behav Ecol Sociobiol} (Incomplete)}{Li et al.~2014, Behav Ecol Sociobiol (Incomplete)}}\label{li-et-al.-2014-behav-ecol-sociobiol-incomplete}}
 
 \chaptermark{Behavioural responses to sympatric echolocation calls}
 
@@ -1087,12 +1087,35 @@ this is my attempt at trying to unify everything into one place.
   agression between species at the same trWophic level should be selected against by natural selection as it increases the risk of predation
 \item
   In free-flying bats, species recognition has been shown to be related to simlarity in call structure and diet ecologies
+\item
+  \emph{`Interspecific recognition may thrterefore be necessary to adjust the strength of interspecific interactions'} - what is meant by this line - adjusted by whom?
+\item
+  the trophic niche index - how `linear'/uniform is it as an index?
+\item
+  Authors tested which bats responded to which bats, and checked if call similarity and trophic overlap explained the observed correlation
+\item
+  3 species were tested, among the 4 species that are commonly found together:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Rhinolophus macrotis}
+  \item
+    \emph{R. macrotis}
+  \item
+    \emph{R. lepidus}
+    All the rhinolophid species were observed in the expeirments --but there were no \emph{Asellia}'s in this experiment. ( \emph{Asellia stoliczkanus})
+  \end{itemize}
 \end{itemize}
 
 (\protect\hyperlink{com_libehav}{Comments 1})
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
+
+\begin{itemize}
+\item
+\end{itemize}
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -1130,20 +1153,184 @@ this is my attempt at trying to unify everything into one place.
 \item
   However, in cluttered conditions, bats reduce their IPI to keep up the update rate, which means the chance of such ambiguities is higher.
 \item
-  `Frequency hopping' helps to overcome this call-echo matching problem. This is known by some
+  `Frequency hopping' helps to overcome this call-echo matching problem.
+\item
+  \emph{Eptesicus fuscus} shows shifts of upto 5-7 kHz between one call to the next while doing this kind of echo hopping. However, even a shift of 5-7 kHz means an overlap of 70-80\% from one call to the other (\protect\hyperlink{com_ming}{Comments 1})
+\end{itemize}
+
+\hypertarget{quick-primer-on-echo-delay-estimation}{%
+\subsection{Quick primer on echo delay estimation}\label{quick-primer-on-echo-delay-estimation}}
+
+\begin{itemize}
+\tightlist
+\item
+  In manmade ranging systems (radar/sonar), all frequencies in a wideband sweep contribute equally to the matched filtering.
+\item
+  In \emph{E. fuscus}, the first harmonic is required for echoes need to have a first harmonic to be `registered', but the second harmonic (FM2) plays a stronger role in modulating echo delay perception.
+\item
+  Authors test the specific idea that even \emph{within} the first harmonic itself, \emph{E. fuscus} only needs a limited region of the FM1 to detect echoes.
 \end{itemize}
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
 
+\begin{itemize}
+\item
+  Authors test if 1) only the lowest paer of FM1 frequencies are required for delay perception 2) unclear what is being \emph{tested} here..\emph{`Second, the small, seemingly not very effective, size of the frequency hopping by just a few kilohertz \ldots.suggests that the hypothesized necessity of these lowest FM1 frequencies may be the key to why the harmonics are processed asymmetrically'}
+\item
+  More and more of the lower frequencies were filtered out and the bats were asked to detect the S+ (\protect\hypertarget{com_ming}{}{Comments 3})
+\item
+  If the authors want to understand which parts of the echo are important - why do they focus on an AFC (alternate forced choice) experiment where the task is to tell apart two echoes - with different arrival delays \emph{and} different structures (single glint vs double glint) (\protect\hypertarget{com_ming}{}{Comments 4})
+\item
+  It seems like \emph{both} phantom echoes were high/low passed filtered - but this isn't explicityly stated in the paper!
+\item
+  4 \emph{E. fuscus} were trained in an alternate force choice experiment
+\item
+\end{itemize}
+
 \hypertarget{results}{%
 \section{Results}\label{results}}
+
+\begin{itemize}
+\tightlist
+\item
+  the region between 29-30 kHz is important for the bats to tell apart S+ and S-
+\item
+  Confusing \emph{`Finally, when all frequencies are removed from S+ by low-pass filtering at 20 kHz, there is no two-glint S+ at all,..'} - if `all' frequencies are removed - there is no echo at all in principle, fo
+\item
+  `\emph{..vast proportion of frequencies do not support perception of echo delay unless the critical frequencies of 25 to 30 kHz are present.}'
+\item
+  authors also cite previous studies where when FM bats were faced with CF playbacks, they responded strongly to playbacks between 24-28 kHz, and didn't respond at all when other frequencies were played back.
+\end{itemize}
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
-\hypertarget{comments}{%
-\subsection{Comments}\label{comments}}
+\begin{itemize}
+\tightlist
+\item
+  The authors seem to discuss the implications of the last few kilohertz results into how frequency hopping works -- they haven't actually shown this directly through the experiments. The data only says the last few kilohertz is important for echo delay detection.
+\item
+  The results indicate that the last few kilohertz is important - but at the same time don't point to a mechanism which allows the bat to detect echoes which are frequency shifted - how would the bat register the fact that the `terminal frequency' has moved up after it's shifted its echolocation? This is not really discussed in the paper directly ?..
+\end{itemize}
+
+\hypertarget{the-scat-model}{%
+\section{the SCAT model}\label{the-scat-model}}
+
+\begin{itemize}
+\tightlist
+\item
+  the SCAT model is a bio-inspired model which aims to mimic how the auditory system of bats work.
+\item
+  delay perception is done by parallel bandpass filters which detect the time between sounds with energy in their bandpass region. Thus, they are able to tell the delay between call and echo fairly accurately.
+\item
+  The idea the authors propose is essentially that the lower part of each call is the one that triggers echo detection.
+\item
+  Imagine one call with terminal frequency at 20 kHz, and the next call with the terminal frequency at 25 kHz. Even if an echo from the previous call were to arrive - it'd have much lower frequencies than that of the current - call and wouldn't be `sent' into the processing chain. (\protect\hypertarget{com_ming}{}{Comments 5})
+\end{itemize}
+
+\hypertarget{com_ming}{%
+\subsection{Comments}\label{com_ming}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  How is this overlap actually calculated - it can be done in multiple ways\ldots including/excluding the second harmonics etc..? As the authors themselves mention later - a shift of 5-7 kHz in the first harmonic corresponds to a shift of 10-14 kHz in the second harmonic.
+\item
+  Fig. 2 is the first figure that is referred in the paper (and the one that brings the phenomenon to the reader directly) - but, Fig.1 (related to a more technical point) is presented first - could have been rearranged.
+\item
+  S+ is introduced without any kind of explanation, and the figure is the main reference for the paper. This is kind of understandable given the word limits, but it's also kind of unfortunate because the reader's flow is interrupted each time by having to go back and forth between sections of the paper.
+\item
+  I'm not able to understand why the authors trained the bats to distinguish two echoes that differ in two characteristics. Am wondering how this would affect what can actualy be said from the experiments. ie. the results could also be narrowly interpreted to say, `bats require the lowest parts of their FM1 to tell apart a double glint echo from a single glint echo' \ldots{} It would have been cleaner if the authors had actually compared the bats ability to tell apart two echoes with the same structure, but arriving at different delays -- this would actually say something about what is required to detect an echo, rather than a double glint vs a single glint echo. The task is made \emph{easier} by the introduction of such different properties \emph{`..question is whether this easy task still is easy (sic) if the lowest fre quencies in FM1 are removed from the S+ echoes'}, but the point is that it may also muddle the interpretation?
+\item
+  There seems to be a disconnect between what was done and what is being discussed. What was shown is that the end frequencies are important for echo discrimination (the glint structure X different delays confuses things according to me). But what is being discussed is how the frequency hopping is reliant on the lower frequencies of each call - the authors haven't really `shown' this experimentally - but suggest a model which may explain it. There's something that I can't put into words better - need to give this a second try again.
+\end{enumerate}
+
+\hypertarget{lakens-daniel-blog-post-from-the-20-statistician}{%
+\chapter{\texorpdfstring{Lakens, Daniel, blog post from \emph{`The 20\% statistician'}}{Lakens, Daniel, blog post from `The 20\% statistician'}}\label{lakens-daniel-blog-post-from-the-20-statistician}}
+
+\chaptermark{Adjusting alpha for statistical tests}
+
+\emph{Why you don't need to adjust your alpha level for all tests you'll do in your lifetime} \citep{daniellakensa_2016}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-08-04}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{itemize}
+\item
+  Take a case where people are randomly assigned into two groups, and two unrelated dependent variables are measured. The groups are compared. True positive of no effect on both the variables is: 0.95 X 0.95 = 0.9025. Probability of at least one of the variables showing up as significantly different is: 1 - 0.9025 = \textbf{0.0975} !! How to control such erroneous false positives?
+\item
+  There are a bunch of methods which can control the `error rates':
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Bonferroni correction
+  \item
+    Holm-Bonferroni sequential procedure
+  \end{enumerate}
+\item
+  When the \# of statistical tests increase, it may be better to control false discovery rate, rather than error rates.
+\end{itemize}
+
+\hypertarget{the-bonferroni-correction}{%
+\section{The Bonferroni correction}\label{the-bonferroni-correction}}
+
+\begin{itemize}
+\item
+  \emph{`The Bonferroni correction controls the familywise error rate..'} \protect\hypertarget{lakens_com}{}{\emph{what is family wise error rate - See} Comments}
+\item
+  \emph{`..is not straight forward is that error control does not just aim to control the number of erroneous statistical inferences, but the number of erroneous theoretical inferences.'}. Is the author trying to say that corrections need to be done when a bunch of tests are trying to answer the same question, with a common dataset - don't fully understand
+\item
+  Experiment wise Type I error rates (\emph{I guess this is the famous p value?}) can be calculated from the setup of the stats? The example given by the author here is in a 2x2x2 ANOVA (See \protect\hypertarget{lakens_com}{}{Comments 2}) - there are seven tests that are done, and so when a 0.05 \(\alpha\) is used each time, this make the probability of getting at least one effect at least 30\%. \emph{(\protect\hypertarget{lakens_com}{}{Comments 3})}
+\item
+  The author also gives a more experimental example. The case of comparing predictions from two theories. One theory predicts interaction in a 2x2 ANOVA, and the other doesn't predict an interaction, but at least one main effect. (A 2x2 ANOVA tests 3 null hypotheses, two main effects and one interaction).\\
+\item
+  A naive way to approach the Bonferroni correction is to set the \(\alpha\) to \(\frac{\alpha}{3}\)
+\item
+  But here the author points out that because theoretically the two theories predict different outcomes, the \(\alpha\) also needs to corrected separately. Since Theory B predicts at least one significant main effect (out of 2 main effects) - we can set the new \(\alpha\) to \(\alpha /2\) and so if the p \textless{} \(\alpha/2\) we will accept Theory B
+\item
+  Since Theory A predicts only one interaction being significant, we don't really need to correct for anything. (\protect\hypertarget{lakens_com}{}{Comments 4})
+\item
+  Maintaining a sensible \(\alpha\) value with multiple testing corrections allows you to be wrong at most at the expected \(\alpha\) rate.
+\item
+  Should you correct for all the tests you will do over your lifetime? Yes, but only if all the data/work you've done is going into testing one single theory !
+\item
+\end{itemize}
+
+\hypertarget{lakens_com}{%
+\section{Comments/Questions}\label{lakens_com}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  what is a `familywise error rate': The probability of making at least on Type I error (False Positive): \(FWE \leq 1-(1-\alpha_{test})^{Number\ of\ comparisons}\). eg. at an \(\alpha\) of 0.05 and with 10 tests, the \(FWE\) is : \(\leq (1-0.05)^{10}=0.401\) (thanks to this \href{https://www.statisticshowto.com/familywise-error-rate/}{page})
+\item
+  2x2x2 ANOVA is when there are three variables and two groups in each variable. ie. imagine you're testing a drugs efficacy, and you have three variables (Thanks to this \href{https://www.graphpad.com/guides/prism/7/statistics/stat_what_is_three-way_anova_used_f.htm}{page}) : sex, dosage level and treatment/control. Within Sex there's male and female, within dosage level there's high and low, and then there's treatment/control. There are seven p-values because it performs a series of comparisons within the 2x2x2 complex:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    3 tests comparing the groups within each of the variables (eg. male vs female, treatment vs control, high vs low)
+  \item
+    3 tests testing two-way interactions: pool data from Sex, effect of treatment vs control in low and high dose groups
+  \item
+    1 test on three way interaction: \emph{`there is no three way interaction among all three factors'}
+  \end{itemize}
+\item
+  I get this example, within one statistical test, there are seven comparisons being made - and when each of these have an alpha value, there can be a false positive - what about when you are performing single comparisons of multiple variables from two groups?
+\item
+  I guess one of the main issues that the author is trying to bring out is that by naively correcting and setting \(\alpha\) values very low, we risk running into Type II (false negative) errors! By setting
+\end{enumerate}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
 \chapter{\texorpdfstring{AUTHORS ET AL. YYYY, \emph{J. STHING. STHING.}}{AUTHORS ET AL. YYYY, J. STHING. STHING.}}\label{authors-et-al.-yyyy-j.-sthing.-sthing.}}
