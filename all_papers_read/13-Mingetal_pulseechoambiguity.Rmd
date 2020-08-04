@@ -64,7 +64,9 @@
 6. The authors don't show the actual double glint echo - which is somewhat odd too. 
 
 ### Additional comments from AFEG Paper primer meeting on 2020-08-04 (Leonie, Paula, Holger, Thejasvi)
+
 (Leonie leading, and other group members commenting)
+
 - As the authors state, when the low pass is at 20kHz -there should be no 
 double glint echo (silence on one side), which means the bats only choose the double glint,
 instead of just reverting to the side with one echo. This seems kind of odd 
