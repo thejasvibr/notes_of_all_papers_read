@@ -61,8 +61,22 @@
 3. S+ is introduced without any kind of explanation, and the figure is the main reference for the paper. This is kind of understandable given the word limits, but it's also kind of unfortunate because the reader's flow is interrupted each time by having to go back and forth between sections of the paper. 
 4. I'm  not able to understand why the authors trained the bats to distinguish two echoes that differ in two characteristics. Am wondering how this would affect what can actualy be said from the experiments. ie. the results could also be narrowly interpreted to say, 'bats require the lowest parts of their FM1 to tell apart a double glint echo from a single glint echo' ... It would have been cleaner if the authors had actually compared the bats ability to tell apart two echoes with the same structure, but arriving at different delays -- this would actually say something about what is required to detect an echo, rather than a double glint vs a single glint echo. The task is made *easier* by the introduction of such different properties *'..question is whether this easy task still is easy (sic) if the lowest fre quencies in FM1 are removed from the S+ echoes'*, but the point is that it may also muddle the interpretation? 
 5. There seems to be a disconnect between what was done and what is being discussed. What was shown is that the end frequencies are important for echo discrimination (the glint structure X different delays confuses things according to me). But what is being discussed is how the frequency hopping is reliant on the lower frequencies of each call - the authors haven't really 'shown' this experimentally - but suggest a model which may explain it. There's something that I can't put into words better - need to give this a second try again. 
+6. The authors don't show the actual double glint echo - which is somewhat odd too. 
 
- 
+### Additional comments from AFEG Paper primer meeting on 2020-08-04 (Leonie, Paula, Holger, Thejasvi)
+(Leonie leading, and other group members commenting)
+- As the authors state, when the low pass is at 20kHz -there should be no 
+double glint echo (silence on one side), which means the bats only choose the double glint,
+instead of just reverting to the side with one echo. This seems kind of odd 
+- The bat could actually be using frequency based cues, rather than 
+the delay
+- Not so many experimental details - a supplementary information could have been included 
+- The results only say that the last few kilohertz is important for telling apart S- and S+ - it doesn't necessarily
+say whether this part plays a role in glint enumeration (single vs double) or delay acuity!
+- Authors haven;t really shown that in general the last few kilohertz aer important between calls, but the authors here have only shown that 
+25-30 kHz is important. 
+- 
+
 
 
 
