@@ -1304,6 +1304,11 @@ this is my attempt at trying to unify everything into one place.
 \item
   Should you correct for all the tests you will do over your lifetime? Yes, but only if all the data/work you've done is going into testing one single theory !
 \item
+  \emph{`..criticism on corrections for multiple comparisons is that it is strange that the conclusions a researcher draws depends on the number of additional tests a researcher performs.'} - here the authors cites the case of a 2 group comparison being significant at 0.05 (p=0.04), but when including a second dependent variable, the \(\alpha\) is now 0.025, which means the first variable data no longer rejects the null hypothesis. ..\emph{`Lowering alpha levels is a mathematical necessity when you want to control error rates, but it is not needed if ..you..quantify relative likelihoods of the data under different hypotheses.'}. Does the author mean that the comparison of the two groups for each of the dependent variables corresopnds to two independent null hypotheses? In what way is this different from the 2x2x2 ANOVA that was just discussed before?
+\item
+  You can also increase the alpha, and sometimes this makes sense to do so - ie. while pre-registering two studies, you can set the alpha at 0.2236, and decide that only if \emph{both} studies show \(p<0.2236\) will the null hypothesis be rejected. This is effectively the same as setting the overall \(p\) at 0.05 because 0.2236X0.2236 = 0.05 - {[}Comments 5{]}
+\item
+  \emph{`There is only one reason to calculate p-values, and that is to control Type 1 error rates using a Neyman-Pearson approach.'} - the focus here is on controlling false positives.
 \end{itemize}
 
 \hypertarget{lakens_com}{%
@@ -1330,6 +1335,8 @@ this is my attempt at trying to unify everything into one place.
   I get this example, within one statistical test, there are seven comparisons being made - and when each of these have an alpha value, there can be a false positive - what about when you are performing single comparisons of multiple variables from two groups?
 \item
   I guess one of the main issues that the author is trying to bring out is that by naively correcting and setting \(\alpha\) values very low, we risk running into Type II (false negative) errors! By setting
+\item
+  What would have happened if the alpha was still set at 0.05 for both studies, then the effective false positive rate would have been 0.025 -- which is perhaps too conservative? Also, with an alpha set at 0.2236, the probability of a false negative is:
 \end{enumerate}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
