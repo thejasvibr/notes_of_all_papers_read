@@ -73,7 +73,7 @@
 
 \title{Notes of all papers read so far}
 \author{Thejasvi Beleyur}
-\date{Last Updated : 2020-08-04}
+\date{Last Updated : 2020-08-11}
 
 \begin{document}
 \maketitle
@@ -1364,6 +1364,197 @@ this is my attempt at trying to unify everything into one place.
 \item
   What would have happened if the alpha was still set at 0.05 for both studies, then the effective false positive rate would have been 0.025 -- which is perhaps too conservative? Also, with an alpha set at 0.2236, the probability of a false negative is:
 \end{enumerate}
+
+\hypertarget{culina-et-al.-2020-plos-biology}{%
+\chapter{\texorpdfstring{Culina et al.~2020, \emph{PLoS Biology}}{Culina et al.~2020, PLoS Biology}}\label{culina-et-al.-2020-plos-biology}}
+
+\chaptermark{Low code availability in ecology}
+
+\emph{Low availability of code in ecology: A call for urgent action} \citep{culina2020low}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-08-11}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{itemize}
+\tightlist
+\item
+  There is more and more awareness on the part of journals and authors to be more open about the data and code.
+\item
+  FAIR principles (See \href{https://www.nature.com/articles/sdata201618}{this paper}):
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Findable
+  \item
+    Accessible
+  \item
+    Interoperable
+  \item
+    Reusable
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\begin{itemize}
+\tightlist
+\item
+  Authors try to quantify how oftent scientists share their code, and were able to identify 346 non-molecular studies between 2015 and 2019
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Has code availability increased over time?
+  \item
+    How well are authors actually following prescribed practices related to code sharing (FAIR principles, etc.)
+  \item
+    \emph{`limits to computational reproducibility'} (\protect\hypertarget{comments_culina}{}{Comments 1})
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\begin{itemize}
+\tightlist
+\item
+  The number of journals requiring code sharing has gone up -\textgreater{} positive trend.
+\end{itemize}
+
+\hypertarget{low-code-availability}{%
+\subsection{Low code availability}\label{low-code-availability}}
+
+\begin{itemize}
+\tightlist
+\item
+  90\% of all software \emph{used} was either GUI or command line code, though the authors even went to the extent of including papers that had screenshots and instructions on how to use the program. (\protect\hypertarget{comments_culina}{}{Comments 2})
+\item
+  Only 27\% of all surveyed articles had code that had some or all of their code available. (\protect\hypertarget{comments_culina}{}{Comments 3})
+\end{itemize}
+
+\hypertarget{findability-accessibility-and-reusability}{%
+\subsection{Findability, accessibility, and reusability}\label{findability-accessibility-and-reusability}}
+
+\begin{itemize}
+\tightlist
+\item
+  Authors point out a very relevant points `\emph{To be found, code availability should ideally be stated within the article or, if not, within the supplementary material of the article.}'
+\item
+  24\% of all articles that actually provided the code didn't state it at all - but instead had broad references to the supplementary infor.
+\item
+  Authors point out that even though archiving code with the supplementary information of the journal works - journal access is not always universal - and this can affect accessibility!
+\item
+  Authors suggest the use of Dryad and Zenodo to archive code - which makes sense.
+\item
+  \emph{`We oped to simply evaluate whether the published code had some form of documentation (e.g.README), either as an accompanying document or embedded at the beginning of the code, and whether the code had inline comments explaining parts of the code.'} (\protect\hypertarget{comments_culina}{}{Comments} 4)
+\end{itemize}
+
+\hypertarget{limits-to-computational-reproducibility}{%
+\subsection{Limits to computational reproducibility}\label{limits-to-computational-reproducibility}}
+
+\begin{itemize}
+\tightlist
+\item
+  Only 21\% of all articles provided both code and data together
+\item
+  Previous estimates of computational reproducibility showed only between 18-80\%.
+\item
+  Even in the papers which provided both data + code --\textgreater{} 26\% ofc the papers used proprietary software (\protect\hypertarget{comments_culina}{}{Comments} 5)
+\end{itemize}
+
+\hypertarget{comments_culina}{%
+\subsection{Comments}\label{comments_culina}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Not clear what is meant by `limits to computational reproducibility' here.
+\item
+  Personally, I don't quite consider screenshot based records very reproducible, because they don't scale well with the number of steps. There are so many details to take care of often, and this is just a very cumbersome way to record and to read and try to reproduce an analysis.
+\item
+  Woah, even though the authors were relatively lax in their definition of what constitutes reproducible code -- even then just about one in three surveyed papers had the associated code with it.
+\item
+  Here too the authors have actually been generous with their criterion for what documentation actually is. I understand that most people will not have the time or training to document their code to the point where it is completely self-contained - but this is also the problem.
+\item
+  Another reason to avoid using proprietary software - it reduces the rate at which others can use your code \emph{and}, most importantly, excludes the quick replication of your results if someone wants to `fact check' it. In general, I can see how certain proprietary softwares may do the job well, but it also means it's an ivory tower - and no one can look into it. However, what can be done is to ensure a coomon set of coding standards are being followed nonetheless (code documentation, tests, READMEs, etc). I'm sure there must be a bigger discussion about this in the literature, as these are my first guesses/thoughts.
+\item
+  The authors seemed to have used an automated tool to find their papers - `Rayyan' - interesting. This tool may be helpful in the future perhaps?!
+\end{enumerate}
+
+\hypertarget{wilkinson-et-al.-2016-scientific-data}{%
+\chapter{\texorpdfstring{Wilkinson et al.~2016, \emph{Scientific Data}}{Wilkinson et al.~2016, Scientific Data}}\label{wilkinson-et-al.-2016-scientific-data}}
+
+\chaptermark{FAIR principles for data management}
+
+\emph{The FAIR Guiding Principles for scientific data management and stewardship} \citep{wilkinson2016fair}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-08-11}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{`data stewardship includes the notion of 'long-tem care' digital assets, with the goal that they should be discovered and re-used for downstream investigations}
+\item
+  \emph{`Humans, however, are not the only critical stakeholders in the milieu of scientific data.'} - authors refer to the fact that `computational agents' (like bots for eg?) are becoming equally important in the curation/searching of knowledge
+\item
+  Many field-specific databases exist with their own formats and curating workflows - eg. protein databanks, astronomy
+\item
+  There are more and more discipline agnostic databanks coming up nowadays - FigShare, Dryad, Mendeley DAta, EUDat, DANS, DataHub
+\item
+  This increase in multiple databases and systems, may actually be making it harder to keep track of datasets for human and `computational stakeholders'
+\item
+  When a researcher is looking to compare the data they've generated with pre-existing datasets - how to go about this task?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    the search needs to be passed through various filters, data formats, species etc. -- it can get complicated finding the relevant result
+  \end{itemize}
+\item
+  \emph{`The goal is for scholarly digital objects of all kinds to become 'first class citizens' \ldots.where the quality of the publication-and more importantly, the impact of the publication-is a function of its ability to be accurately and appropriately found, re-used, and cited over time, by all stakeholders, both human and mechanical.'}
+\item
+  there are already machine actionable formats out there, eg. the ones used in many databanks and space sciences etc, but the aim is really to come up with something that is broad, so that a machine can decide on a dataset's relevance/contents even though it hasn't seen it before.
+\item
+  This site \url{https://fairsharing.org/} seems to be pretty useful in detailing many of the publicly accessible databases/data repositories, and also details the various file formats out there, among other things.
+\end{itemize}
+
+\hypertarget{the-significance-of-machines-in-data-rich-research-environments}{%
+\subsection{The significance of machines in data-rich research environments}\label{the-significance-of-machines-in-data-rich-research-environments}}
+
+\begin{itemize}
+\tightlist
+\item
+  humans have a better understanding of what is relevant and what is not while searching, but human searching is not scalable.
+\item
+  To enable automatic searches/curation - datasets need to be machine actionable', ie. have machine parsable identifiers, info on the type of objects, licenses, consent and etc.
+\end{itemize}
+
+\hypertarget{comments}{%
+\subsection{Comments}\label{comments}}
+
+\begin{itemize}
+\tightlist
+\item
+  This paper talks about some ideas which are definitely going to be important. One thing that confused me is that they talk about databases/repositories which are exemplary in the paper (DataVerse, FAIRDOM, ISA, Open PHACTS, etc), but don't mention any of the other ones (eg. Dryad, Zenodo, FigShare, etc) - a comparison would have been nice to understand why these were not included. I can also see that there is a clear discipline-based bias in where people upload their datasets based on where their colleagues do it too.
+\item
+  In general, the comment about the growing number of databases/repositories is a very valid one. While reading this paper itself I began to realise how narrow my overall awareness for various databases is!
+\end{itemize}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
 \chapter{\texorpdfstring{AUTHORS ET AL. YYYY, \emph{J. STHING. STHING.}}{AUTHORS ET AL. YYYY, J. STHING. STHING.}}\label{authors-et-al.-yyyy-j.-sthing.-sthing.}}

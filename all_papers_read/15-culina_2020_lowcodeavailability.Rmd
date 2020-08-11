@@ -1,0 +1,60 @@
+# Culina et al. 2020, *PLoS Biology*
+
+\chaptermark{Low code availability in ecology}
+
+*Low availability of code in ecology: A call for urgent action* [@culina2020low]
+
+- *notes taken on 2020-08-11*
+
+## Introduction
+
+- There is more and more awareness on the part of journals and authors to be more open about the data and code. 
+- FAIR principles (See [this paper](https://www.nature.com/articles/sdata201618)):
+    * Findable
+    * Accessible
+    * Interoperable
+    * Reusable
+
+## Methods
+
+- Authors try to quantify how oftent scientists share their code, and were able to identify 346 non-molecular studies between 2015 and 2019
+    - Has code availability increased over time?
+    - How well are authors actually following prescribed practices related to code sharing (FAIR principles, etc.)
+    - *'limits to computational reproducibility'* ([Comments 1]{#comments_culina})
+
+## Results
+
+- The number of journals requiring code sharing has gone up -> positive trend.
+
+### Low code availability
+
+- 90% of all software *used* was either GUI or command line code, though the authors even went to the extent of including papers that had screenshots and instructions on how to use the program. ([Comments 2]{#comments_culina})
+- Only 27% of all surveyed articles had code that had some or all of their code available. ([Comments 3]{#comments_culina})
+
+### Findability, accessibility, and reusability
+
+- Authors point out a very relevant points '*To be found, code availability should ideally be stated within the article or, if not, within the supplementary material of the article.*' 
+- 24% of all articles that actually provided the code didn't state it at all -  but instead had broad references to the supplementary infor. 
+- Authors point out that even though archiving code with the supplementary information of the journal works - journal access is not always universal - and this can affect accessibility!
+- Authors suggest the use of Dryad and Zenodo to archive code - which makes sense.
+- *'We oped to simply evaluate whether the published code had some form of documentation (e.g.README), either as an accompanying document or embedded at the beginning of the code, and whether the code had inline comments explaining parts of the code.'* ([Comments]{#comments_culina} 4)
+
+
+### Limits to computational reproducibility
+
+- Only 21% of all articles provided both code and data together 
+- Previous estimates of computational reproducibility showed only between 18-80%.
+- Even in the papers which provided both data + code --> 26% ofc the papers used proprietary software ([Comments]{#comments_culina} 5) 
+
+
+
+
+### Comments {#comments_culina}
+
+1. Not clear what is meant by 'limits to computational reproducibility' here. 
+1. Personally, I don't quite consider screenshot based records very reproducible, because they don't scale well with the number of steps. There are so many details to take care of often, and this is just a very cumbersome way to record and to read and try to reproduce an analysis. 
+1. Woah, even though the authors were relatively lax in their definition of what constitutes reproducible code -- even then just about one in three surveyed papers had the associated code with it. 
+1. Here too the authors have actually been generous with their criterion for what documentation actually is. I understand that most people will not have the time or training to document their code to the point where it is completely self-contained - but this is also the problem. 
+1. Another reason to avoid using proprietary software - it reduces the rate at which others can use your code *and*, most importantly, excludes the quick replication of your results if someone wants to 'fact check' it. In general, I can see how certain proprietary softwares may do the job well, but it also means it's an ivory tower - and no one can look into it. However, what can be done is to ensure a coomon set of coding standards are being followed nonetheless (code documentation, tests, READMEs, etc). I'm sure there must be a bigger discussion about this in the literature, as these are my first guesses/thoughts. 
+1. The authors seemed to have used an automated tool to find their papers - 'Rayyan' - interesting. This tool may be helpful in the future perhaps?!
+

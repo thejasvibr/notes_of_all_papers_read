@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.12.14)  4 AUG 2020 17:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.12.14)  11 AUG 2020 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,6 +1010,21 @@ LaTeX Warning: Label `methods' multiply defined.
 LaTeX Warning: Label `results' multiply defined.
 
 
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `comments' multiply defined.
+
+
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `methods' multiply defined.
+
+
+LaTeX Warning: Label `results' multiply defined.
+
+
 LaTeX Warning: Label `discussion' multiply defined.
 
 
@@ -1476,27 +1491,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 1321--1323
 
 ]
 Chapter 15.
-(./all_papers_read.bbl [51] [52
+[51] [52] [53] [54
 
-] [53])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1398.
-[54]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1398.
+]
+Chapter 16.
+[55]
+Underfull \hbox (badness 1024) in paragraph at lines 1554--1556
+\TU/lmr/m/n/10 important. One thing that confused me is that they talk about
+ []
+
+
+Overfull \hbox (8.64201pt too wide) in paragraph at lines 1556--1557
+[]\TU/lmr/m/n/10 In general, the comment about the growing number of databases/
+repositories
+ []
+
+[56]
+Chapter 17.
+(./all_papers_read.bbl [57
+
+] [58
+
+] [59])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1589.
+[60]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1589.
 (./all_papers_read.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1398.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1398.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1589.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1589.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1398.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1589.
  ) 
 Here is how much of TeX's memory you used:
- 25944 strings out of 494988
- 472121 string characters out of 6178637
- 682626 words of memory out of 5000000
- 29537 multiletter control sequences out of 15000+600000
+ 25964 strings out of 494988
+ 472573 string characters out of 6178637
+ 683262 words of memory out of 5000000
+ 29557 multiletter control sequences out of 15000+600000
  536609 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 58i,6n,117p,10410b,458s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,6n,117p,10410b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on all_papers_read.pdf (54 pages).
+Output written on all_papers_read.pdf (60 pages).

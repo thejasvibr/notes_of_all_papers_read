@@ -1,0 +1,34 @@
+# Wilkinson et al. 2016, *Scientific Data*
+
+\chaptermark{FAIR principles for data management}
+
+*The FAIR Guiding Principles for scientific data management and stewardship* [@wilkinson2016fair]
+
+- *notes taken on 2020-08-11*
+
+## Introduction
+
+- *'data stewardship includes the notion of 'long-tem care' digital assets, with the goal that they should be discovered and re-used for downstream investigations*
+- *'Humans, however, are not the only critical stakeholders in the milieu of scientific data.'* - authors refer to the fact that 'computational agents' (like bots for eg?) are becoming equally important in the curation/searching of knowledge
+- Many field-specific databases exist with their own formats and curating workflows - eg. protein databanks, astronomy
+- There are more and more discipline agnostic databanks coming up nowadays - FigShare, Dryad, Mendeley DAta, EUDat, DANS, DataHub
+- This increase in multiple databases and systems, may actually be making it harder to keep track of datasets for human and 'computational stakeholders'
+- When a researcher is looking to compare the data they've generated with pre-existing datasets - how to go about this task? 
+    - the search needs to be passed through various filters, data formats, species etc. -- it can get complicated finding the relevant result
+- *'The goal is for scholarly digital objects of all kinds to become 'first class citizens' ....where the quality of the publication-and more importantly, the impact of the publication-is a function of its ability to be accurately and appropriately found, re-used, and cited over time, by all stakeholders, both human and mechanical.'*
+- there are already machine actionable formats out there, eg. the ones used in many databanks and space sciences etc, but the aim is really to come up with something that is broad, so that a machine can decide on a dataset's relevance/contents even though it hasn't seen it before. 
+- This site [https://fairsharing.org/](https://fairsharing.org/) seems to be pretty useful in detailing many of the publicly accessible databases/data repositories, and also details the various file formats out there, among other things. 
+
+### The significance of machines in data-rich research environments 
+
+- humans have a better understanding of what is relevant and what is not while searching, but human searching is not scalable. 
+- To enable automatic searches/curation - datasets need to be machine actionable', ie. have machine parsable identifiers, info on the type of objects, licenses, consent and etc. 
+ 
+
+
+### Comments
+
+- This paper talks about some ideas which are definitely going to be important. One thing that confused me is that they talk about databases/repositories which are exemplary in the paper (DataVerse, FAIRDOM, ISA, Open PHACTS, etc), but don't mention any of the other ones (eg. Dryad, Zenodo, FigShare, etc) - a comparison would have been nice to understand why these were not included. I can also see that there is a clear discipline-based bias in where people upload their datasets based on where their colleagues do it too. 
+- In general, the comment about the growing number of databases/repositories is a very valid one. While reading this paper itself I began to realise how narrow my overall awareness for various databases is!
+
+
