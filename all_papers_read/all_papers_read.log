@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.12.14)  11 AUG 2020 15:01
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.12.14)  25 AUG 2020 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1028,6 +1028,18 @@ LaTeX Warning: Label `results' multiply defined.
 LaTeX Warning: Label `discussion' multiply defined.
 
 
+LaTeX Warning: Label `introduction' multiply defined.
+
+
+LaTeX Warning: Label `methods' multiply defined.
+
+
+LaTeX Warning: Label `results' multiply defined.
+
+
+LaTeX Warning: Label `discussion' multiply defined.
+
+
 LaTeX Warning: Label `comments' multiply defined.
 
 )
@@ -1508,29 +1520,48 @@ repositories
 
 [56]
 Chapter 17.
-(./all_papers_read.bbl [57
 
-] [58
+Underfull \vbox (badness 2111) has occurred while \output is active []
 
-] [59])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1589.
-[60]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1589.
+[57
+
+]
+Overfull \hbox (23.56453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 58 \TU/lmr/m/sl/10 CHAPTER 17.  NOSELEAF AND PINNAE MOVEMENTS IN
+ HIPPOSIDERIDS
+ []
+
+[58] [59]
+Overfull \hbox (23.56453pt too wide) has occurred while \output is active
+\TU/lmr/m/n/10 60 \TU/lmr/m/sl/10 CHAPTER 17.  NOSELEAF AND PINNAE MOVEMENTS IN
+ HIPPOSIDERIDS
+ []
+
+[60
+
+]
+Chapter 18.
+(./all_papers_read.bbl [61] [62
+
+] [63])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1679.
+[64]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1679.
 (./all_papers_read.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1589.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1589.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1679.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1679.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1589.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1679.
  ) 
 Here is how much of TeX's memory you used:
- 25964 strings out of 494988
- 472573 string characters out of 6178637
- 683262 words of memory out of 5000000
- 29557 multiletter control sequences out of 15000+600000
+ 25974 strings out of 494988
+ 472719 string characters out of 6178637
+ 683437 words of memory out of 5000000
+ 29567 multiletter control sequences out of 15000+600000
  536609 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  58i,6n,117p,10410b,546s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on all_papers_read.pdf (60 pages).
+Output written on all_papers_read.pdf (64 pages).
