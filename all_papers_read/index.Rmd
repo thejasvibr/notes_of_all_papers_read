@@ -1,13 +1,15 @@
 --- 
 title: "Notes of all papers read so far"
 author: "Thejasvi Beleyur"
-date: "Last Updated : `r Sys.Date()`"
-site: bookdown::bookdown_site
+date: 'Last Updated : `r Sys.Date()`'
+output: pdf_document
 documentclass: book
-bibliography: [book.bib]
+bibliography: book.bib
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: This is a minimal example of using the bookdown package to write a book.
+  The output format for this example is bookdown::gitbook.
+site: bookdown::bookdown_site
 ---
 
 # What this book is about {-}

@@ -73,7 +73,7 @@
 
 \title{Notes of all papers read so far}
 \author{Thejasvi Beleyur}
-\date{Last Updated : 2020-08-25}
+\date{Last Updated : 2020-09-01}
 
 \begin{document}
 \maketitle
@@ -1644,6 +1644,91 @@ this is my attempt at trying to unify everything into one place.
   Wonder what the sensory consequences of this are? What happens \emph{after} the call? The echoes would typically return a few ms after the call - how fast are the pinnae responding to this, over what time-scales is the pinna motion actually happening.
 \item
   In the introduction, the authors would like to test the hypothesis that noseleaf/pinna movements are important for biosonar performance. The prediction of noseleaf and pinna movements comes from nowhere - it is \emph{not} a prediction, but they are \emph{exploring} the connection!!! This is poor and misleading writing, which tries to fit a square into a triangle shaped hole. It's completely fine if the study is exploratory, but there is no need to sell it off as a study which comes from a theoretically based `prediction'
+\end{enumerate}
+
+\hypertarget{goldshtein-et-al.-2020-current-biology}{%
+\chapter{\texorpdfstring{Goldshtein et al.~2020, \emph{Current Biology}}{Goldshtein et al.~2020, Current Biology}}\label{goldshtein-et-al.-2020-current-biology}}
+
+\chaptermark{SHORT TITLE HERE}
+
+\emph{Reinforcement Learning Enables Resource Partioning in Foraging Bats} \citep{goldshtein2020reinforcement}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-08-28}
+\end{itemize}
+
+\hypertarget{intro-methods-results}{%
+\section{Intro-Methods-Results}\label{intro-methods-results}}
+
+\begin{itemize}
+\item
+  `\emph{Every evening, from late spring to mid-summer, tens of thousands of hungry lactating female lesser long-nosed bats (}Leptonycteris yerbabuenae\emph{) emerge from their roost and navigate over the Sonoran Desert, seeking for nectar and pollen}' : Comment 2
+\item
+  Something I'm seeing in papers and am responding to. `We hypothesised..' without clearly stating the reason behind it.
+\item
+  \emph{..quality of a specific cactus can vary dramatically according to the number of flowers it opens on a given night} - somewhat misleading sentence. Comment 3
+\item
+  Fig 1A. - showing the number of open flowers per cacti - could have shown a \emph{discrete} colour bar. The use of a continuous color bar for integers is very confusing.
+\item
+  \emph{`Moreover, bats have to re-map the field every night.'} - not clear why, or what this statement is based on
+\item
+  \emph{Although we found a significant correlation between the number of flowers on consecutive nights, there was much inter-night variability} - the reference to the figures aren't v clear : Comment 4, 5
+\item
+  `\emph{\ldots because a conspecific might deplete it in the meanwhile (the bats' behaviour suggests they do not know whether a floewr was recently visited\ldots)}' -
+  S1E captioned erroneously perhaps Comments 6,7
+\item
+  \emph{`Finally, all of these data were used to develop a mathematical model..'}, hmmm, this is a bit semantic, but aren't evolutionary simulations , \emph{simulations} and not `mathematical models' as such.
+\item
+  GPS tracked 17 bats, and then finally reconstructed the foraging sites of 8 bats. This must have been a lot of work over all! Perhaps, the authors even actually tagged more bats - and considering the problems with tag losses and animal recaptures - this must have been quite an effort.
+\item
+  Commuting speed was 8.7 m/s ground speed (\textasciitilde31km/h), and commutes correspond to \textasciitilde46\% of the time spent away from the cave
+\item
+  Even within a cactus field - each bat concentrated its foraging in a narrow part about 0.14 km\(^{2}\) in area (0.14 km\(^{2}\) is \textasciitilde{} 374x374 m\(^{2}\))
+\item
+  Plants that were visited \(\leq\) 5 times were considered to belong to the bats' `core cacti' - Comment 8
+\item
+  \emph{`Indeed, video analysis revealed that cacti with more flowers were visited significantly more often'} - this triggered the thought - do the authors actually report if bats visited multiple flowers per visit? This might be another way that bats learn to identify which cacti are worth visiting multiple times, and those which are not. Also did core cacti have more flowers than those around them?
+\item
+  In the reinforcement learning simulations, the bat remembers the top ten cacti it visited according to the amount of nectar it provided at that point of time (`nectar weight'). The next cactus to be visited is determined based on its nectar weight and inversely proportional to its distance from the current plant.
+\item
+  `\emph{Importantly, we did not fit the data in order to find the learning rate \(\alpha\)}' - this is not true. An evolutionary algorithm is one of many types of algorithms that can be used to estimate a parameter. All of these algorithms use some kind of minimisation/maximisation algorithm. An evolutionary algorithm just uses the fitness of the agent, which is in turn affected by the cost functions in the model itself. Moreover, the authors do use the actual data to parameterise the evolutionary simulations themselves. I don't see how the act of using an evolutionary algorithm means the parameter is not being fitted in the same way a common linear regression fits the data to get coefficients. This is logical wrong, and also misleading - adds an air of deeper sophistication than there actually is.
+\item
+  Authors show that when compared to a trapline model or a random search model, the reinforcement model matched various aspects of the observed dataset well (inter-visit distances, revisit time intervals)
+\item
+  Authors also ran simulations with aggressive behaviours in the agents, unlimited cacti memory (instead of a fixed 10 plants) - and still saw the appearance of non-overlapping core plants across multiple individuals
+\item
+  `\emph{We prove analystically that\ldots{}}' - missing reference to {[}29{]} (Korman et al.~2020, ArXiv preprint)
+\item
+  `\emph{Interestingly, a single-parameter model based on reinforcement learning was able to closely reproduce the bats' behavior}' - in some sense -- is this really a single-parameter model? The learning rate \(\alpha\) makes sense only in the context of the many other parameters that were used to setup the model right? Would the same learning rate be valid given that the bats flew at a different speed or the plants were placed at different spatial arrangements. This is not a fully generalisable result I feel\ldots.also isn't
+\item
+\end{itemize}
+
+\hypertarget{comments}{%
+\subsection{Comments}\label{comments}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The authors state \emph{`Many species have been suggestd to follow a trapline, that is, to revisit the food sources in a repeating ordered manner\ldots We thus hypothesized that lesser long-nosed bats would visit cacti in a sequenced manned.'}. Is this a legitimate form of hypothesising. Isn't it closer to expecting to \emph{examining}/checking if the bats perform sequenced foraging? Am wondering if this kind of formulation is the effect of the NHST type thinking, where there is one hypothesis that needs to be formulated and either rejected or supported.
+\item
+  Like it as an opening line. Very graphic, and very evocative of what is being studied. The sentence could have been shorter though.
+\item
+  The sentence creates the impression that quality is somehow influenced by the number of flowers open - as if they were \emph{two} variable. But instead, here, the authors actually define the \emph{quality} of a cactus by the number of flowers it has open!
+\item
+  Comment about figure S1 in general. This is a very compact graph, that prevent leisurely inspection of the data. Annother approach would have been to give one page to each graph and legend. This is the supplementary information section after all. (Does Current Biology have page limits even for this section?)
+\item
+  Figures S1C,D: it's not clear to me why the `independent model' looks the way it does. If there is no correlation at all between the last and current night there should be equal transition probability for any transition (0-10 flowers, 0-9, 1-10 etc..) - but here too there is some kind of clustering. Why is this the case - more details are required to explain the model. The explanation by itself is not detailed enough for criticism or replication.
+\item
+  S1E captioned `Bats probably cannot identify which flowers \emph{they} previously visted' - emphasis mine. - the caption refers to a bat knowing which flowers it previously visited while the main text refers to the idea that bats may not be able to tell if other conspecifics previously visited. Although in the following sentences the situation is corrected.
+\item
+  Figure S1F refers to the \emph{order} of visitation, and not really to whether bats can tell if a flower has been previously visited or not. This is confusing. Also S1F1,2 are incredibly small figures
+\item
+  The authors choose the points at which the derivative of the probability mass function (PMF) drops to zero. I'm thinking about how generalised this approach is. It works and it intuitively makes sense for \emph{this} particular PMF because the probability of increasing visits drops very drastically, and the distribution is right-skewed. The same definition would have failed if the PMF had been more flat, or bi-modal-ish. Another option would have been to use an X\% cumulative probability approach, ie. the \#of visits at which the X\%ile of the data is seen. This is robust to the exact shape of the distribution.
+\item
+  What kind of `cost function'/ metric was used. The exact parameterisation of this could have an effect of the types of decisions the agents end up showing.
 \end{enumerate}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
