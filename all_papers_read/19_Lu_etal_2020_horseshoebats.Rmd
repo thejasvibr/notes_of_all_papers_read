@@ -1,0 +1,43 @@
+# Lu et al. 2020, *J. Exp. Biol.*
+
+\chaptermark{Horseshoe bats' response to noise playbacks}
+
+*Echolocating bats exhibit differential amplitude compensation for noise interference at a sub-call level* [@lu2020echolocating]
+
+- *notes taken on 2020-09-28*
+
+## Introduction
+
+- In humans, the Lombard effect is known to occur at the sub-sentence level, and even at the sub-word level. Certains words in sentences were stressed more than others, and even parts of words themselves were stressed more than others. 
+- So far, no work looking at whether animals can perform such similar sub-vocalisation amplitude compensation. Authors try to answer this question in two species of Hipposiderid bats. 
+
+
+## Methods
+- 6 *H. armiger* and 5 *H. pratti* used in the study. 
+- Like the fact that they authors state very clearly how they compensated the frequency response of the microphones and speakers. 
+- Animals were placed on a roost with 15 microphones pointing to the animal above
+- Lowest received level recordable by the mics were 28 dB SPL rms (background noise level)
+- White noise between 10-100 kHz was played back at 3 levels:
+    - 40, 52, 64 dB rms SPL
+- Fig.1 : Not clear where exactly the speaker was in relation to the bat. Fig 1. D makes it look like the speaker was placed to one side of the bat -- which is a somewhat odd position - given that there could be side biases or even side-filtering effects due to this. 
+- Also played, bandpass or band-removed white noise 
+- The 'Call analysis' section - doesn't really 'develop' a workflow beyond what is currently out in the published literature, neither is the code uploaded anywhere. Not sure why the authors claim to have 'developed analytical tools to conduct automated sub-call level analyses.' as outlined in Fig S2 and the description istself. For instance, see [@siemers2005species] or [@schoeppler2018precise] - who use the same methodology.
+- The authors also don't really state how they are able to estimate the actual call levels of the call after having accounted for the noise playbacks. 
+
+## Results
+- Authors use a linear-mixed model and then report the estimated difference in received level in comparison to the silence - am wondering if this is too 'processed' somehow. Does the story remain the same even if simple measures are used like the median? (this is a very crude thought!)
+- Bats seem to show an increase in FM amplitude when in the presence of any kind of noise - but especially strongly in the presence of 10-100 kHz noise. 
+- tFM duration also seems to increase in *H. armiger* by upto 0.6 ms - this increase is not negligible, considering the FM itself can be just a few ms long. 
+- The bandwidth of the FM also seems to increase by a few kHz in the presence of increasing noise playback levels in *H. armiger*
+-  Against expectations, the authors also found that non-band noise playbacks resulted in a Lombard effect. 
+
+
+## Discussion 
+
+
+### Comments
+- The description of the band-passed and band-removed noise playbacks is not very clear. It was good that the authors decided to put the schematic in Fig 4. 
+- '..developed analytical tools to conduct automated sub-call level analyses.' - the code is sadly not uploaded anywhere online, and the authors state in the Call Analysis section 'Original scripts for sound analysis of this study will be provided upon request.'. Also, the statement 'All data needed to evaluate the conclusions are present in the paper or the Supplementary Materials.' is a bit of an oxymoron - this is the bare minimum that is required anyway. The next statement again points out to the whole idea of contacting the authors 'Additional data related to this paper may be requested from the authors' - this step of contacting the authors only adds more hindrance to double checking work or using data for other purposes. 
+- There seems to be some odd-ish self-citations in some places (only showing one here). For instance, ...'amplitude of mammals is largely determined by the subglottal air pressure' has a citation to Luo & Wiegrebe 2016 - which actually studies another topic, and only mentions this same fact that amplitude is determined by subglottal air pressure. I find this citation 
+out of place and unnecessary - as the paper itself is not a primary reference where this result has been determined or supported.
+
