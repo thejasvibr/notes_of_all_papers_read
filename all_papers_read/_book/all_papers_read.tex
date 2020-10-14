@@ -73,7 +73,7 @@
 
 \title{Notes of all papers read so far}
 \author{Thejasvi Beleyur}
-\date{Last Updated : 2020-09-28}
+\date{Last Updated : 2020-10-14}
 
 \begin{document}
 \maketitle
@@ -89,6 +89,22 @@
 This book is a compilation of all the notes I will be making for the papers that I read from now.
 I've been realising my paper notes are scattered everywhere, across multiple folders and multiple computers,
 this is my attempt at trying to unify everything into one place.
+
+\hypertarget{how-build-the-book-after-each-new-chapter-addition}{%
+\chapter{How build the book after each new chapter addition}\label{how-build-the-book-after-each-new-chapter-addition}}
+
+If in RStudio, with the correct R environment in place, then:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open the \texttt{index.Rmd} file
+\item
+  `Session--\textgreater Build all'
+\item
+  Both the pdf and html file formats should automatically be compiled one after the other.
+\end{enumerate}
 
 \hypertarget{toledo-et-al.-2020-science}{%
 \chapter{Toledo et al.~2020, Science}\label{toledo-et-al.-2020-science}}
@@ -1819,6 +1835,89 @@ this is my attempt at trying to unify everything into one place.
   There seems to be some odd-ish self-citations in some places (only showing one here). For instance, \ldots{}`amplitude of mammals is largely determined by the subglottal air pressure' has a citation to Luo \& Wiegrebe 2016 - which actually studies another topic, and only mentions this same fact that amplitude is determined by subglottal air pressure. I find this citation
   out of place and unnecessary - as the paper itself is not a primary reference where this result has been determined or supported.
 \end{itemize}
+
+\hypertarget{yamada-et-al.-2020-scientific-reports}{%
+\chapter{\texorpdfstring{Yamada et al.~2020, \emph{Scientific reports}}{Yamada et al.~2020, Scientific reports}}\label{yamada-et-al.-2020-scientific-reports}}
+
+\chaptermark{spatial learning + echolocation in R. ferrumequinum}
+
+\emph{Modulation of acoustic navigation behaviour by spatial learning in the echolocation bat }Rhinolophus ferrumequinum* * \citep{yamada2020modulation}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-10-15}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{itemize}
+\tightlist
+\item
+  Bats are known to handle complex environments and modulate their echolocation accordingly
+
+  \begin{itemize}
+  \tightlist
+  \item
+    beam shape, direction, pulse interval, call duration etc.
+  \end{itemize}
+\item
+  `doublets' and `triplets' are known to be emited when there is clutter and thought to improve object resolution
+\item
+  Spatial memory however also plays a role in how bats echolocate. \emph{Eptesicus fuscus} reduce call rate and show an increasingly stable flight path as they fly over time in a fixed environment.
+\item
+  Bats may actually use their spatial memory to fly in challenging environments, and may not rely on the `actual' sensory feedback all the time. Authors designed a flight maze where bats didn't/had access to `sensory information' in terms of the extent to which echoes returned from obstacles.
+\end{itemize}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\begin{itemize}
+\tightlist
+\item
+  Bats had to fly in a `S' shaped flight path, the flight path was created with 2 types of walls: acoustically permeable and acoustically inpermeable.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The acoustically permeable wall was made of plastic chains hanging from the ceiling. It's considered acoustically permeable because the sound can pass through the gaps in the chains.
+  \item
+    the acoustically impermeable wall was made of boards.
+  \end{itemize}
+\item
+  14 initially naive bats split into 7,7 between the two `treatments'
+
+  \begin{itemize}
+  \tightlist
+  \item
+    each bat was flown 12 times in the flight treatment, and the 1st and 12th flight trials were analysed - to observe changes.
+  \end{itemize}
+\item
+  \emph{``If bats coordinate flight relying on their spatial memory rather than acoustic sensing, there would be no remarkable differences in the learned flight behaviours between the acoustically permeable wall and reflective wall conditions.''} . Not really. See Comments {[}1{]}
+\end{itemize}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\begin{itemize}
+\item
+\end{itemize}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\hypertarget{comments}{%
+\subsection{Comments}\label{comments}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  The target strengths of the `acoustically permeable' and impermeable treatments are by their very nature different. This means that the two walls will be detected at different distances/ the reflected echoes will have a much higher received level. The received level being higher in one treatment than the other itself may cause all kinds of different responses. How to control for this. Perhaps the bats are not really `using' the echoes of the objects behind but rather relying only on the received level of the echoes?
+\item
+  asdf ;lkj asdf ;lkj asdf ;lkj adsf ;lkj asdf ;lkj
+\end{enumerate}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
 \chapter{\texorpdfstring{AUTHORS ET AL. YYYY, \emph{J. STHING. STHING.}}{AUTHORS ET AL. YYYY, J. STHING. STHING.}}\label{authors-et-al.-yyyy-j.-sthing.-sthing.}}

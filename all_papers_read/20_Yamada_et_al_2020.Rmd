@@ -1,0 +1,50 @@
+# Yamada et al. 2020, *Scientific reports*
+
+\chaptermark{spatial learning + echolocation in R. ferrumequinum}
+
+*Modulation of acoustic navigation behaviour by spatial learning in the echolocation bat *Rhinolophus ferrumequinum* * [@yamada2020modulation]
+
+- *notes taken on 2020-10-15*
+
+## Introduction
+
+- Bats are known to handle complex environments and modulate their echolocation accordingly
+    - beam shape, direction, pulse interval, call duration etc.
+- 'doublets' and 'triplets' are known to be emited when there is clutter and thought to improve object resolution 
+- Spatial memory however also plays a role in how bats echolocate. *Eptesicus fuscus* reduce call rate and show an increasingly stable flight path as they fly over time in a fixed environment. 
+- Bats may actually use their spatial memory to fly in challenging environments, and may not rely on the 'actual' sensory feedback all the time. Authors designed a flight maze where bats didn't/had access to 'sensory information' in terms of the extent to which echoes returned from obstacles. 
+
+
+## Methods
+
+- Bats had to fly in a 'S' shaped flight path, the flight path was created with 2 types of walls: acoustically permeable and acoustically inpermeable. 
+    - The acoustically permeable wall was made of plastic chains hanging from the ceiling. It's considered acoustically permeable because the sound can pass through the gaps in the chains. 
+    - the acoustically impermeable wall was made of boards. 
+
+- 14 initially naive bats split into 7,7 between the two 'treatments'
+    - each bat was flown 12 times in the flight treatment, and the 1st and 12th flight trials were analysed - to observe changes.
+- *"If bats coordinate flight relying on their spatial memory rather than acoustic sensing, there would be no remarkable differences in the learned flight behaviours between the acoustically permeable wall and reflective wall conditions."* . Not really. See Comments [1,2]
+- Beam direction estimated from the 20 mics placed all around the room. This is something I'm not so sure can be done accurately without mics on the obstacles themselves. Beam width can already be extremely narrow in horseshoe bats, and on top of that - an obstacle may shadow the beam a lot anyway -- and this might actually prevent detections of calls made in the direction of the obstacle itself! Comment [4]
+- 
+
+
+## Results
+
+- *'Overall, the statistical models that we describe in the Methods and Materials section...fit the data well and explain more variance than the respective null models with..'* - not really necessary, and not in context of any particular results 
+- Bats actually emitted mostly doublets and triplets  in both flight conditions 
+    - Over time flying the setup, the numberof emitted calls and triplets fell in both treatments 
+- Authors *do not* measure source level - which would have been a very important parameter to understand detection of echoes/obstacle avoidance
+- Faster flights had fewer calls emitted - (a sign that the bat is 'bolder' and thus willing to take more sensorimotor risk somehow?)
+- Figure 5 c,d : the authors use a GLMM with 7 individuals, two treatmetns, measured twice. Is there enough power in there to detect differences given the sampling intensity?
+- 
+
+## Discussion 
+
+
+### Comments
+
+1. The target strengths of the 'acoustically permeable' and impermeable treatments are by their very nature different. This means that the two walls will be detected at different distances/ the reflected echoes will have a much higher received level. The received level being higher in one treatment than the other itself may cause all kinds of different responses. How to control for this. Perhaps the bats are not really 'using' the echoes of the objects behind but rather relying only on the received level of the echoes? 
+1. One of the other things the authors could have done to control for the difference in target strengths is to make impermeable chain walls or permeable acrylic sheet walls. This would remove aspects such as directionality of the object -- even though it might actually be really hard to equalise target strength. 
+1. No DATA or CODE published online. 
+1. The authors also state a previous publication to show that the beam shape direction can be accurately recreated - but this is with the same/similar microphone arrangement *without* obstacles
+

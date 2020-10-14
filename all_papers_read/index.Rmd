@@ -17,3 +17,9 @@ This book is a compilation of all the notes I will be making for the papers that
 I've been realising my paper notes are scattered everywhere, across multiple folders and multiple computers, 
 this is my attempt at trying to unify everything into one place. 
 
+# How build the book after each new chapter addition
+If in RStudio, with the correct R environment in place, then:
+
+1. Open the ```index.Rmd``` file
+1. 'Session-->Build all'
+1. Both the pdf and html file formats should automatically be compiled one after the other.
