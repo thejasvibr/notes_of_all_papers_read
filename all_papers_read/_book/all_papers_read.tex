@@ -73,7 +73,7 @@
 
 \title{Notes of all papers read so far}
 \author{Thejasvi Beleyur}
-\date{Last Updated : 2020-10-14}
+\date{Last Updated : 2020-11-19}
 
 \begin{document}
 \maketitle
@@ -1874,7 +1874,6 @@ If in RStudio, with the correct R environment in place, then:
 \section{Methods}\label{methods}}
 
 \begin{itemize}
-\tightlist
 \item
   Bats had to fly in a `S' shaped flight path, the flight path was created with 2 types of walls: acoustically permeable and acoustically inpermeable.
 
@@ -1894,13 +1893,32 @@ If in RStudio, with the correct R environment in place, then:
     each bat was flown 12 times in the flight treatment, and the 1st and 12th flight trials were analysed - to observe changes.
   \end{itemize}
 \item
-  \emph{``If bats coordinate flight relying on their spatial memory rather than acoustic sensing, there would be no remarkable differences in the learned flight behaviours between the acoustically permeable wall and reflective wall conditions.''} . Not really. See Comments {[}1{]}
+  \emph{``If bats coordinate flight relying on their spatial memory rather than acoustic sensing, there would be no remarkable differences in the learned flight behaviours between the acoustically permeable wall and reflective wall conditions.''} . Not really. See Comments {[}1,2{]}
+\item
+  Beam direction estimated from the 20 mics placed all around the room. This is something I'm not so sure can be done accurately without mics on the obstacles themselves. Beam width can already be extremely narrow in horseshoe bats, and on top of that - an obstacle may shadow the beam a lot anyway -- and this might actually prevent detections of calls made in the direction of the obstacle itself! Comment {[}4{]}
+\item
 \end{itemize}
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
 \begin{itemize}
+\item
+  \emph{`Overall, the statistical models that we describe in the Methods and Materials section\ldots fit the data well and explain more variance than the respective null models with..'} - not really necessary, and not in context of any particular results
+\item
+  Bats actually emitted mostly doublets and triplets in both flight conditions
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Over time flying the setup, the numberof emitted calls and triplets fell in both treatments
+  \end{itemize}
+\item
+  Authors \emph{do not} measure source level - which would have been a very important parameter to understand detection of echoes/obstacle avoidance
+\item
+  Faster flights had fewer calls emitted - (a sign that the bat is `bolder' and thus willing to take more sensorimotor risk somehow?)
+\item
+  Figure 5 c,d : the authors use a GLMM with 7 individuals, two treatmetns, measured twice. Is there enough power in there to detect differences given the sampling intensity?
 \item
 \end{itemize}
 
@@ -1916,8 +1934,127 @@ If in RStudio, with the correct R environment in place, then:
 \item
   The target strengths of the `acoustically permeable' and impermeable treatments are by their very nature different. This means that the two walls will be detected at different distances/ the reflected echoes will have a much higher received level. The received level being higher in one treatment than the other itself may cause all kinds of different responses. How to control for this. Perhaps the bats are not really `using' the echoes of the objects behind but rather relying only on the received level of the echoes?
 \item
-  asdf ;lkj asdf ;lkj asdf ;lkj adsf ;lkj asdf ;lkj
+  One of the other things the authors could have done to control for the difference in target strengths is to make impermeable chain walls or permeable acrylic sheet walls. This would remove aspects such as directionality of the object -- even though it might actually be really hard to equalise target strength.
+\item
+  No DATA or CODE published online.
+\item
+  The authors also state a previous publication to show that the beam shape direction can be accurately recreated - but this is with the same/similar microphone arrangement \emph{without} obstacles
 \end{enumerate}
+
+\hypertarget{griffin-donald-listening-in-the-dark}{%
+\chapter{Griffin, Donald, `Listening in the dark',}\label{griffin-donald-listening-in-the-dark}}
+
+\chaptermark{Listening in the dark}
+
+\emph{Listening in the dark} \citep{griffin1958listening}
+
+\begin{itemize}
+\item
+  \emph{notes taken on 2020-11-17}
+\item
+  \emph{'Echolocation is still a topic that resists neat classification into any conventional category of science. It ramifies into widely different scientific disciplines iunclusing ethology, mammalogy, physiology, psychology, acoustics, nd the mathematical theory of signal detectionl. The results of new investigations have reemphasized the necessity of a broad biological perspective for any serious appreciation of echolocation. }
+\item
+  page 58: about Spallanzi's work \emph{`Yet only a regrettably small propotion of his obserations and conclusions became widely enough known to win any general acceptance among zoologists, and even today much of his work remains unpublished.What is known of it serves amply to confirm the proposition that one can often learn more from a careful study of the thoughts of a master than from years of firsthand research.'}
+\item
+  `The apparatus then in use by Pierce was called a sonic detector, and it consisted of a crystal microphone located at the focus of a long parabolic horn, cacuum tube amplifiers to increase the minute electrical votages generated by such a crystal when ssound waves impinge upon it, and circuit \ldots.'
+\item
+  page 80: `And finally, just what can bats perceive by echolocation, how close must objects of various sizes be before they can be detected, under what conditions does echolocation perhaps fail to serve bats as well as in our laboratory tests, and how do dozens or hundreds of bats manage to fly in the same part of a cave without interfering with each other's acoustic orientation?'
+\item
+  page 85: `Until very recently only one reliable type of microphone has been available which could be calibrated over the frequency range required to study bat sounds, that is\ldots.'
+\item
+  page 166: `Echolocation cannot be an easy or an automatic process for the bats; it must require attention, skill, and metnal effort, albeit perhaps wholly unconscious effort like that involved in walking through underbrush or riding a bicycle.'
+\item
+  page 166: `Evidently when bats are flying through familiar surroundings they rely to an increasing extent on their memory of spatial relations acquired on previous flights through the same space.'
+\item
+  page 180, chp 7: `There were a few practical difficulties standing in the way of this objective. Microphone, pre-amplifier, and portable raio could all be operated from dry batteries, and indeed my original apparatus for listening to bat sounds during their pursuit ofinsects was all carried in a single box strapped to my back by means of a rucksack frame. A cathode ray oscillograph was something else again, but a small one could be operated from a storage batter therough a vibrator which acted as a converter of direct to alternating current.'
+\item
+  page 181, chp 7: `Finally after several evenings of hectic preparations and gradual elimination of operating difficulties, I was ready with the microphone and parabolic horn now mounted on a bracket not unlike a tommy gun, the trigger bying a swirch for remote control of the motion picture camera which was to photograph the oscillograph screen.'
+\item
+  page 201, Chp 7: `This presented certain difficulties, for people are prone to wonder when a man walks about wearing ear phones connected to a box with dials, and carries in his hand a parabolic horn. Various explanations were suggested quite audibly, but the onlookers seldom noticed the bats though we were pointing the horn toward them at every opportunity. When one youth suggested to his companions that we might be listening to the bats he was derided and drowned out with knowing statements about radio receivers and cosmic rays.'
+\item
+  page 367, Chp 14: `To be sure, background noises at ultrasonic frequencies are nto of nearly so great marnitude as sounds of lower frequencies resultring from natural causes such as rustling of begetation by the wind, insect sounds, or the noise produced by running water. But other bats must be a major source of possible interference, and it is only natural to wonder why the many bats whichfly in a single cave do not ``jam'' each other since each one is busy filling the air with its won pulses.'
+\item
+  page 386 Chp 15: `A little of the naturalis'ts viewpoint is required to comprehend more fully the significance and the boundless variety of precisely adapted functional microcosms among which we live. But it is even more obvious in this period of scientific history that we can no longer expect to understand nature by merely describing and cataloging her variety. We now have tools at our disposal which can help us to deeper and more satisfying insights. It is in this context that I hope the phenomena of echolcoation will be contemplated, so that they may serve to exemplify the potential role of an analytical approach to natural history.'
+\end{itemize}
+
+\hypertarget{chapter-1-the-nature-of-bats}{%
+\section{Chapter 1: The nature of bats}\label{chapter-1-the-nature-of-bats}}
+
+\begin{itemize}
+\tightlist
+\item
+  There is a diurnally active microchiropteran - \emph{Lavia frons}
+\item
+  Griffin also gives tips for houseowenrs who'd like to get rid of bats in their house - close up the cracks over the winter or when the bats are not roosting.
+\end{itemize}
+
+\hypertarget{chapter-3-the-acoustic-orientation-of-bats}{%
+\section{Chapter 3 : The Acoustic Orientation of Bats}\label{chapter-3-the-acoustic-orientation-of-bats}}
+
+\begin{itemize}
+\item
+  Hahn, an American scientist, had shown the ears of a bat are important for its orientation. He was the first to use the wire-mesh protocol to assess how well bats avoid obstacles.
+\item
+  So interesting to see that there was a `rediscovery' of many sorts. Galambos and Griffin also put open/closed tubes onto bat ears o see if that made any difference.
+\item
+  Sven Dijkgraf began studies on bats and notice dthe \emph{Ticklaut} - in German occupied Netherlands.
+\end{itemize}
+
+\hypertarget{chapter-4-the-voices-of-bats}{%
+\section{Chapter 4: The Voices of Bats}\label{chapter-4-the-voices-of-bats}}
+
+\begin{itemize}
+\item
+  Griffin used cathode ray oscillographs to figure out the call durations of bats.
+\item
+  To study the directionality of bat calls - Griffin had to make a bat fly past a camera taking photos, and placed 2 mics at 90 degrees separation! Wow -- and look at me with the \emph{Ushichka} dataset and \textgreater10 mics everywhere!!!
+\end{itemize}
+
+\hypertarget{chapter-5-the-hearing-of-bats}{%
+\section{Chapter 5: The hearing of bats}\label{chapter-5-the-hearing-of-bats}}
+
+\begin{itemize}
+\tightlist
+\item
+  Mentions issues with figuring outt he behavioural hearing thresholds w animals - esp at freqs where they are not v sensitive - as there may be tonal impurities as certain frequencies are played back at v high thresholds
+\end{itemize}
+
+\hypertarget{chapter-6-successs-and-failure-of-bats-acoustic-orientation}{%
+\subsection{Chapter 6: Successs and Failure of Bats' Acoustic Orientation}\label{chapter-6-successs-and-failure-of-bats-acoustic-orientation}}
+
+\begin{itemize}
+\item
+  Moehres and Oettingen-Spielberg performed experiments w bats kept over long periods of time, and foudn bats were bery faithful to their own memory. Bats were in fact reluctant to fly into a part of the room where a partition had been removed! (Möhres, F. P., \& Oettingen-Spielberg, T. (1949). Versuche über die Nahorientierung und das Heimfindevermögen der Fledermäuse. Verhandlungen der deutschen Zoologen in Mainz, 248-252.)
+\item
+  Griffin also describes experiments where he trained an \emph{E. fuscus} to capture prey from the same part of a flight room over a long period, and then put obstacles while the bat was feeding. The bat seemed to constantly crash into the new obstacles - even though it was emitting calls all the time!
+\end{itemize}
+
+\hypertarget{chapter-7-the-pursuit-of-insect-prey}{%
+\subsection{Chapter 7: The pursuit of insect prey}\label{chapter-7-the-pursuit-of-insect-prey}}
+
+\begin{itemize}
+\item
+  Spallanzi already did experiments back in teh 1800's where he found agroup of bats - blinded some and left the others as they were. He then compared their stomach contents after capturing them in the morning -and saw the blinded bats had the same number of insects as the ones with intact eyes
+\item
+  Intersting how Griffin mentions studies where bats were \emph{shot} and their stomach contents examined - it seemed like this kind of approach was fairly common and not so negatively seen as today.
+\item
+  Bats seemed to accumulate about 1.3 grams/hour of insects while foraging - data from observational studies looking at stomach contents over the time period from roost emergence
+\item
+  Exciting descriptions of how the study of echolocation research actually did move from \emph{laboratory} to \emph{field} -- exactly what the whole Ushichka dataset tries to achieve for group echolocation.
+\item
+  Crazy to think of the kind of basic technology that Griffin had to use to reveal all the things he did! There were \emph{separate} instruments called `sound spectrographs' which would actually produce spectrograms -- and he writes about how this helped him a lot in studies looking at natural echolocation during insect capture.
+\item
+  pg 193, `Experiments with false echoes' - Griffin writes about his first attempts to create what was later named `phantom echoes' by Moll?
+\end{itemize}
+
+\hypertarget{chapter-14-the-acuity-of-echolocation}{%
+\subsection{Chapter 14: The acuity of echolocation}\label{chapter-14-the-acuity-of-echolocation}}
+
+\begin{itemize}
+\tightlist
+\item
+  in the section `The discrimination of echoes from interfering noise':
+\end{itemize}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
 \chapter{\texorpdfstring{AUTHORS ET AL. YYYY, \emph{J. STHING. STHING.}}{AUTHORS ET AL. YYYY, J. STHING. STHING.}}\label{authors-et-al.-yyyy-j.-sthing.-sthing.}}
