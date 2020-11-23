@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  19 NOV 2020 14:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.17)  23 NOV 2020 15:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -466,6 +466,9 @@ LaTeX Warning: Label `discussion' multiply defined.
 LaTeX Warning: Label `comments' multiply defined.
 
 
+LaTeX Warning: Label `comments' multiply defined.
+
+
 LaTeX Warning: Label `introduction' multiply defined.
 
 
@@ -615,12 +618,12 @@ Type  H <return>  for immediate help.
 l.702     walking\ldots{}}
                           . This is the confusing part, because, what was the 
 Here is how much of TeX's memory you used:
- 10336 strings out of 481433
- 147757 string characters out of 5920116
- 427886 words of memory out of 5000000
- 26748 multiletter control sequences out of 15000+600000
+ 10348 strings out of 481433
+ 147983 string characters out of 5920116
+ 428258 words of memory out of 5000000
+ 26756 multiletter control sequences out of 15000+600000
  594358 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 66i,6n,72p,492b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,6n,72p,531b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 !  ==> Fatal error occurred, no output PDF file produced!
