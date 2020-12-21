@@ -1,0 +1,75 @@
+# Morey et al. 2016, Psychon Bull Rev
+
+\chaptermark{Confidence in confidence intervals}
+
+*The fallacy of placing confidence in confidence intervals* [@morey2016fallacy]
+
+- *notes taken on 2020-12-21*
+
+
+## The folk theory of confidence intervals 
+
+* confidence interval is a range which has X% prob. of containing the true parameter $\theta$
+* *confidence procedure* : the 'process' used to generate a confidence interval. 
+* Many misconceptions surrounding the use/understanding of what CI's stand for
+
+## 1.0 Fundamental confidence fallacy 
+* the common misconception is that if X% of all confidence intervals drawn will have the true paramete, then it 
+must be that it implies there is an X% probability of the calculated CI having the true parameter
+* *the issue is that the X% probability holds for multiple runs, and not for this ONE trial!*. Having created a confidence interval
+there is no way to know whether it has the true parameter in it or not!! We may have had the luck of getting the X% of CIs with the 
+parameter in it, or the 1-X% luck of getting a CI without the parameter in it!
+ 
+## 2.0 Precision fallacy
+
+* The width of the confidence interval is taken to show the precision with which a parameter can be estimated. 
+* This need not necessarily true. eg. the authors show how a dataset split into two subsets can have similar means, but very different variance, and thus different confidence intervals around the mean. It does not necessarily mean that the estimate is 'less precise'!
+
+## 3.0 The likelihood fallacy
+
+* One common misconception is that CIs include the most likely values of a parameter
+* *A confidence procedure may have a fixed *average* probability of including the true value, but whether on any given sample it includes the 'reasonable' values is a different question* 
+* However, the values given by a CI can be very misleading, and it can be that the values are actually misleading
+
+## The theory of confidence intervals 
+
+* The width of the confidence interval is linked to its *power*, in the sense of excluding 'false values' in the interval. This is where the choice of the confidence procedure (CP) plays an important role. For example, among two CPs, one of them may always provide CIs that exclude false values -- which means it has a higher *power*. 
+
+## Early skepticism 
+
+* *'Neyman had developed a behavioral theory designed to control error
+rates, not a theory for reasoning from data'* -- authors state this in the context of saying that the idea of CIs wasn't to generate meaning/help interpretation from them, but rather to to generate a protocol for parameter estimation that will work out correctly most of the time. 
+
+## Examples 
+(Did not fully follow either of the examples, and so didn't make notes!)
+
+## Discussion 
+* Authors highlight the mismatch between the original purpose of CIs and their actual use in the literature: *'Confidence
+interval theory was developed to solve a very constrained
+problem: how can one construct a procedure that produces
+intervals containing the true parameter a fixed proportion
+of the time?'*
+
+### Guidelines for interpreting and reporting intervals 
+
+* *'Once one has collected data and computed a confidence
+interval, how does one then interpret the interval? The
+answer is quite straightforward: one does not – at least not within confidence interval theory.'*
+
+* 1. Report credible intervals instead of confidence intervals wherever possible
+* 2. Don't use confidence procedures that aren't supported with a Bayesian basis
+* 3. Warn the readers that the CI is not a Bayesian interval!
+* 4. 
+
+
+
+
+
+
+
+
+
+
+
+
+

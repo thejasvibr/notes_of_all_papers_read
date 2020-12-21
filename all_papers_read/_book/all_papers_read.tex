@@ -73,7 +73,7 @@
 
 \title{Notes of all papers read so far}
 \author{Thejasvi Beleyur}
-\date{Last Updated : 2020-11-23}
+\date{Last Updated : 2020-12-21}
 
 \begin{document}
 \maketitle
@@ -1572,96 +1572,6 @@ If in RStudio, with the correct R environment in place, then:
   In general, the comment about the growing number of databases/repositories is a very valid one. While reading this paper itself I began to realise how narrow my overall awareness for various databases is!
 \end{itemize}
 
-\hypertarget{zhang-et-al.-2019-j.-exp.-biol.}{%
-\chapter{\texorpdfstring{Zhang et al.~2019, \emph{J. Exp. Biol.}}{Zhang et al.~2019, J. Exp. Biol.}}\label{zhang-et-al.-2019-j.-exp.-biol.}}
-
-\chaptermark{Noseleaf and pinnae movements in hipposiderids}
-
-\emph{Dynamic relationship between noseleaf and pinnae in echolocating hipposidered bats} \citep{zhang2019dynamic}
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{notes taken on 2020-08-25}
-\end{itemize}
-
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
-
-\begin{itemize}
-\tightlist
-\item
-  Noseleafs in hipposiderids are known to shift in shape during call emission, and thus affect where the call is directed.
-\item
-  Pinna movements are also thought to generate additional sensory information for the bat to use
-\item
-  Authors test to see if noseleaf and pinna motions are coordinated during echolocation.
-\item
-  Perform a canonical analysis to see if the pinna and noseleaf motions are somehow coordinated/occur together.
-\item
-  \emph{`We also expected that canonical correlation would detect a relationship between the motions. But a negative result of either analysis does not reject the hypothesis, because neither method is guaranteed to find any existing relationship. By demonstrating coordination between emission and reception dynamics, a positive result of this analysis could lay the foundation for a better understanding of active, dynamic sensing paradigms in bats and beyond.'} (\protect\hypertarget{com_zhang}{}{Comments 1})
-\end{itemize}
-
-\hypertarget{methods}{%
-\section{Methods}\label{methods}}
-
-\begin{itemize}
-\item
-  \emph{`We exposed the bats to a variety of changing biosonar targets to attract their attention and elicit exploratory biosonar behaviors triggered by novelty.'} : missing details! How were the bats placed, were they sitting, flying. Very sparse description, which doesn't give any details at all.
-\item
-  A lot of detail given to the 3d camera tracking -- which is not really required in my opinion. This is not really the novel contribution of this paper, and so these details can be reduced - and more focus on the actual science the authors performed
-\item
-  Only a few dots numbered, the rest not -why? (\protect\hypertarget{com_zhang}{}{Comments 2})
-\item
-  \emph{`The microphone was mounted at the same height as the platform on which the bat was positioned at a distance of 35 cm in front of the animal'} (\protect\hypertarget{com_zhang}{}{Comments 3})
-\item
-  Pinna movements classified into `rigid' and `non-rigid' (if all landmarks moved and were still \textless= 2mm of their previous positions, the motion was called rigid)
-\item
-  Closing and opening noseleaf motions occured with non-rigid pinna movements
-\end{itemize}
-
-\hypertarget{results}{%
-\section{Results}\label{results}}
-
-\begin{itemize}
-\tightlist
-\item
-  K-means clustering separated noseleaf motions into 4 groups: closing, opening, random and no motion.
-\item
-  All closing noseleaf motions coincided with call emission, but only 3/74 coincided with opening motions.
-\item
-  \emph{`closing and opening motions of the noseleaf were mostly accompanied by non-rigid pinna motions (68.95 to 90.41\%)'} - what is the meaning the of `to'. Should it be replaced by `respectively', and if it is actually a min-max range, then what is the range calculated over.
-\item
-  noseleaf and pinnae open and close together (\protect\hypertarget{com_zhang}{}{Comments 4})
-\end{itemize}
-
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{`The qualitative and quantitative relationships demonstrated here are predicted by the hypothesis that the biosonar system of hipposiderid bats relies on the synergistic integration of emission and reception dynamics'} -- where is this hypothesis explicitly stated?? The authors only state this in the introduction \emph{`Our underlying hypothesis is that movements of noseleaf and pinnae are important to biosonar performance of rhinolophid and hipposiderid bats.'}. The authors are claiming something that they did not show in their data, and the `predictions' they are testing are not really predictions per se. - (\protect\hypertarget{com_zhang}{}{Comments 5})
-\end{itemize}
-
-\hypertarget{com_zhang}{%
-\subsection{Comments}\label{com_zhang}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  This is a somewhat odd statement because \emph{any} statistical/analytical method cannot guarantee the detection of an effect. The ability of any stat/analytical method relies on so many things, the data, the sample size. On the other hand, even if a method `detects' something, there is no guarantee that it is not a false positive - which has no biological meaning. This is a somewhat odd statement especially because it seems to only focus on the false negative side of the story, and overly favours a positive statistical/analytical result. Taken independently, this sentence bothers me somewhat.
-\item
-  In Fig 1C the bat has many more dots than are numbered. Why were these dots not used in the final analysis, or discussed?
-\item
-  Only now we find out that the bat was actually placed on a platform and the setup was placed in front of it.
-\item
-  Wonder what the sensory consequences of this are? What happens \emph{after} the call? The echoes would typically return a few ms after the call - how fast are the pinnae responding to this, over what time-scales is the pinna motion actually happening.
-\item
-  In the introduction, the authors would like to test the hypothesis that noseleaf/pinna movements are important for biosonar performance. The prediction of noseleaf and pinna movements comes from nowhere - it is \emph{not} a prediction, but they are \emph{exploring} the connection!!! This is poor and misleading writing, which tries to fit a square into a triangle shaped hole. It's completely fine if the study is exploratory, but there is no need to sell it off as a study which comes from a theoretically based `prediction'
-\end{enumerate}
-
 \hypertarget{goldshtein-et-al.-2020-current-biology}{%
 \chapter{\texorpdfstring{Goldshtein et al.~2020, \emph{Current Biology}}{Goldshtein et al.~2020, Current Biology}}\label{goldshtein-et-al.-2020-current-biology}}
 
@@ -2114,6 +2024,216 @@ If in RStudio, with the correct R environment in place, then:
 \tightlist
 \item
   Intersting that in this `report' they talk about how they have just obtained funding from the `Notgemeinschaft der Deutschen Wissenschaft' and, that they will publish the discussed results in detail in the `Zeitschrift fuer vergleichende Physiologie' (Now Journal of Comparitive Physiology)
+\end{itemize}
+
+\hypertarget{mair-et-al.-2020-environ.-toxicol.-chem.}{%
+\chapter{\texorpdfstring{Mair et al.~2020, \emph{Environ. Toxicol. Chem.}}{Mair et al.~2020, Environ. Toxicol. Chem.}}\label{mair-et-al.-2020-environ.-toxicol.-chem.}}
+
+\chaptermark{Minimum detectable difference}
+
+\emph{The minimum detectable difference (MDD) Concept for Establishing TRust in Nonsignificant REsults: A Critical Review} \citep{mair2020minimum}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-12-04/07}
+\end{itemize}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{itemize}
+\tightlist
+\item
+  Paper is set in context of agriculture and aquatic ecology practices - where treatments with a chemical/pesticide are compared with controls without. A non-significant result is taken to mean no a negligible effect
+\item
+  Acceptable concentrations are set by the concentration where the transition occurs from non-significant to significant.
+\item
+  Using signficance to determine acceptable concentrations is problematic because the significance depends strongly on the power of the statistical setup. Since many experiments, esp.~mesocosm experiments are low-sample size exercises, power is of even more concern.
+\item
+  Pre-experimental power calculations can be used to calculate a minimum required sample size to detect a certain effect. Post-experimental `post-hoc' power calculations can be used to estimate power. Post-hoc power calculations are problematic because the effect size is typically estimated from the low-sample sized data itself -- and thus doesn't always add new information.
+\end{itemize}
+
+\hypertarget{minimum-detectable-effect-mde}{%
+\subsection{Minimum detectable effect (MDE)}\label{minimum-detectable-effect-mde}}
+
+\begin{itemize}
+\tightlist
+\item
+  MDE is an alternative to post-hoc power calculations
+\item
+  MDE uses `the estimated variance in the data for calculating the effeect size that could have been detected with a specified power..' - but this method sometimes produces counterintuitive results.
+\end{itemize}
+
+\hypertarget{minimum-detectable-difference-mdd}{%
+\subsection{Minimum detectable difference (MDD)}\label{minimum-detectable-difference-mdd}}
+
+\begin{itemize}
+\tightlist
+\item
+  The `effect size that would have been just significant considering the sample size and variance measured in a conducted experiment'
+\item
+  pMDD proportional MDD is calculated with the mean value as reference
+\end{itemize}
+
+\hypertarget{approaches-to-control-type-ii-error-rates-post-hoc}{%
+\subsection{Approaches to control type II error rates post hoc}\label{approaches-to-control-type-ii-error-rates-post-hoc}}
+
+\begin{itemize}
+\item
+  MDE : one issue with MDE is that the variance in the data is assumed to be representative of the population variance. One issue with MDE is that it neglects the estimated effect size.
+\item
+  MDD :
+  \#\# Methods
+\end{itemize}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\hypertarget{comments}{%
+\subsection{Comments}\label{comments}}
+
+\hypertarget{morey-et-al.-2016-psychon-bull-rev}{%
+\chapter{Morey et al.~2016, Psychon Bull Rev}\label{morey-et-al.-2016-psychon-bull-rev}}
+
+\chaptermark{Confidence in confidence intervals}
+
+\emph{The fallacy of placing confidence in confidence intervals} \citep{morey2016fallacy}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2020-12-21}
+\end{itemize}
+
+\hypertarget{the-folk-theory-of-confidence-intervals}{%
+\section{The folk theory of confidence intervals}\label{the-folk-theory-of-confidence-intervals}}
+
+\begin{itemize}
+\tightlist
+\item
+  confidence interval is a range which has X\% prob. of containing the true parameter \(\theta\)
+\item
+  \emph{confidence procedure} : the `process' used to generate a confidence interval.
+\item
+  Many misconceptions surrounding the use/understanding of what CI's stand for
+\end{itemize}
+
+\hypertarget{fundamental-confidence-fallacy}{%
+\section{1.0 Fundamental confidence fallacy}\label{fundamental-confidence-fallacy}}
+
+\begin{itemize}
+\tightlist
+\item
+  the common misconception is that if X\% of all confidence intervals drawn will have the true paramete, then it
+  must be that it implies there is an X\% probability of the calculated CI having the true parameter
+\item
+  \emph{the issue is that the X\% probability holds for multiple runs, and not for this ONE trial!}. Having created a confidence interval
+  there is no way to know whether it has the true parameter in it or not!! We may have had the luck of getting the X\% of CIs with the
+  parameter in it, or the 1-X\% luck of getting a CI without the parameter in it!
+\end{itemize}
+
+\hypertarget{precision-fallacy}{%
+\section{2.0 Precision fallacy}\label{precision-fallacy}}
+
+\begin{itemize}
+\tightlist
+\item
+  The width of the confidence interval is taken to show the precision with which a parameter can be estimated.
+\item
+  This need not necessarily true. eg. the authors show how a dataset split into two subsets can have similar means, but very different variance, and thus different confidence intervals around the mean. It does not necessarily mean that the estimate is `less precise'!
+\end{itemize}
+
+\hypertarget{the-likelihood-fallacy}{%
+\section{3.0 The likelihood fallacy}\label{the-likelihood-fallacy}}
+
+\begin{itemize}
+\tightlist
+\item
+  One common misconception is that CIs include the most likely values of a parameter
+\item
+  \emph{A confidence procedure may have a fixed }average* probability of including the true value, but whether on any given sample it includes the `reasonable' values is a different question*
+\item
+  However, the values given by a CI can be very misleading, and it can be that the values are actually misleading
+\end{itemize}
+
+\hypertarget{the-theory-of-confidence-intervals}{%
+\section{The theory of confidence intervals}\label{the-theory-of-confidence-intervals}}
+
+\begin{itemize}
+\tightlist
+\item
+  The width of the confidence interval is linked to its \emph{power}, in the sense of excluding `false values' in the interval. This is where the choice of the confidence procedure (CP) plays an important role. For example, among two CPs, one of them may always provide CIs that exclude false values -- which means it has a higher \emph{power}.
+\end{itemize}
+
+\hypertarget{early-skepticism}{%
+\section{Early skepticism}\label{early-skepticism}}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{`Neyman had developed a behavioral theory designed to control error
+  rates, not a theory for reasoning from data'} -- authors state this in the context of saying that the idea of CIs wasn't to generate meaning/help interpretation from them, but rather to to generate a protocol for parameter estimation that will work out correctly most of the time.
+\end{itemize}
+
+\hypertarget{examples}{%
+\section{Examples}\label{examples}}
+
+(Did not fully follow either of the examples, and so didn't make notes!)
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\begin{itemize}
+\tightlist
+\item
+  Authors highlight the mismatch between the original purpose of CIs and their actual use in the literature: \emph{`Confidence
+  interval theory was developed to solve a very constrained
+  problem: how can one construct a procedure that produces
+  intervals containing the true parameter a fixed proportion
+  of the time?'}
+\end{itemize}
+
+\hypertarget{guidelines-for-interpreting-and-reporting-intervals}{%
+\subsection{Guidelines for interpreting and reporting intervals}\label{guidelines-for-interpreting-and-reporting-intervals}}
+
+\begin{itemize}
+\item
+  \emph{`Once one has collected data and computed a confidence
+  interval, how does one then interpret the interval? The
+  answer is quite straightforward: one does not -- at least not within confidence interval theory.'}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    Report credible intervals instead of confidence intervals wherever possible
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{1}
+  \tightlist
+  \item
+    Don't use confidence procedures that aren't supported with a Bayesian basis
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{2}
+  \tightlist
+  \item
+    Warn the readers that the CI is not a Bayesian interval!
+  \end{enumerate}
+\item
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \setcounter{enumi}{3}
+  \item
+  \end{enumerate}
 \end{itemize}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
