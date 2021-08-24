@@ -1,0 +1,39 @@
+# Kaya & Elhilali 2016
+
+\chaptermark{Modelling auditory attention}
+
+*Modelling auditory attention* (review) [@kaya2017modelling]
+
+- *notes taken on 2021-08-24*
+
+* Attention is not a unidirectional process - has 'bottom-up' and 'top-down' processes in play 
+* The relevance of a sound is modulated by the auditory scence (eg. explosion - a conspicuous sound) or the task to be accomplished (listening to a speaker call in a crowded area). 
+* Our auditory experiences can alter the receptive fields of individual neurons and thus have cortical-level effects. 
+* In contrast to visual attention, modelling has been lagging behind in auditory attention .
+
+## Models of auditory attention 
+
+### Bottom-up attention 
+* Not too many top-down models out there
+* Few of the existing models convert audio data into time-frequency maps, and then predict saliency by looking at modulations of features that stimulate neurons in mammalian auditory cortex. 
+* The issue with time-frequency type models is that they don't consider how the sequence of events affects attentive processing. The order of sounds and their saliency is important -eg. a quietish set of sounds followed by a loud one. The loud sound gets attention. If reversed, the silent sound doesn't get as much attention. 
+* Next gen. of models performed a more limited type of input-reception, using the sounds heard till now to decide the saliency of received sounds at each point. 
+
+## Top-down attention 
+* Top-down models are informed by a large body of work using neural basis of task-driven attention. 
+* Hubel et al. in the 1950's found 'attention unit' neurons that responded to new/surprising sounds such as jangling of keys etc. 
+* The 'spectro-temporal receptive fields' (STRFs) of neurons reveal the response of neurons to sounds. The behavioural goals of an animal alter the STRFs of neurons quickly. Furhter experimental work using magnetoencephalography and surface electrodes allow characterisation of whole brain activation while listenting to sounds.
+* Modelling the STRF adaption has been one avenue of work - eg. suggesting that STRFs adapt to have the highest signal-background difference. 
+* 'Reverse modelling' has also been performed - starting from the neural spikes back to reconstructing the heard sounds - which correlated most with the spectro-temporal regions of highest energy in the attended sounds. 
+
+## Validation of auditory attention models 
+* Visual attention is greatly aided by eye-tracking data - which allows quantitative description of visual salience
+* Auditory attention curently lacks the visual equivalent of eye-tracking 
+	* MEG and EEG work well with humans but need better analytical tools to process the data
+	* single-unit recordings are too invasive to be carried out regularly on animals or humans 
+	* human subjects annotating saliency is too slow and 'conscious' in comparison to the 'automatic' nature of eye-tracking
+
+## Applications of auditory attention models
+* computational techniques still fail at tasks that are simple for humans - telling apart speech from noise. 
+* using auditory attention models 	to guide the computational tools could help improve automated sound labelling/recognition 
+* brain-computer interfaces will also benefit from attentional models
