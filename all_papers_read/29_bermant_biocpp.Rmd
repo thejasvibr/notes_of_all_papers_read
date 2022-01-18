@@ -1,0 +1,26 @@
+# Bermant 2021, Sci. Rep.
+
+\chaptermark{BioCPP - source separation network}
+
+*BioCPPNet: automatic bioacoustic source separation with deep neural networks* [@bermant_biocppnet_2021]
+
+- *notes taken on 2021-12-09*
+
+## Introduction
+
+* Human speech separation has a series of developed methods
+* Animal vocalisations often have overlapping sounds, and because there's 'no formal method' to analyse overlapping sounds - biologists often don't analyse such data -- very well made point. 
+* 
+
+## Methods
+
+
+## Results
+
+
+## Discussion 
+
+
+### Comments
+
+

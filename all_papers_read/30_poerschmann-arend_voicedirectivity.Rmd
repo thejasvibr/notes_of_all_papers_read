@@ -1,0 +1,38 @@
+# Poerschmann & Arend 2021 YYYY, *JASA*
+
+\chaptermark{Human voice directionality}
+
+*Investigating phoneme-dependencies of spherical voice directivity patterns* [@porschmann2021investigating]
+
+- *notes taken on 2022-01-05*
+
+## Introduction
+* knowledge of voice directionality is old - and this has been investigated to great detail comparing vowels, effect of sex, voice dynamics, etc. 
+* Very few 'full-spherical' measurements of the human voice - previous studies typically took separate measurements at each angle using pairs of mics (reference on-axis vs angled)
+* Full-spherical measurements allow a dynamic snapshot of sound directivity over an utterance
+* To generate a spherical directivity map from a few microphones however means upsampling a highly variable 'signal' without introducing too many artifacts. 
+* Authors came up with the spatial upsampling by directional equalization (SUpDEq) in previous work - and this can be used to generate reliable upsampled spherical maps < 8 kHz (w <4 dB error using a 32 channel pentakis dodecahedron array)
+* 
+
+## Methods
+* Measurements made in the anechoic chamber of TH Koeln w dimensions of 4.5 x 11.7 x 2.3 m (wbh)
+* 32 mics placed over a 2 m diameter pentakis dodecahedron
+* Subject's head aligned using cross-hair lasers
+* Subjects sang glissandos (same vowel with increasing pitch) 
+* 'In general, the directivity analysis can be based either on time frames of the voice signals or on impulse responses determined for the articulation of different phonemes, which is the approach we took in this study' -- *not familiar with this method*
+* Also add another extension where they specially consider the problem of <= 200 Hz sound being reflected around in the room, and thus shorten the impulse response to 128 samples to account for boundary reflections. Would be great to see their code in general to understand the exact signal processing steps they take. 
+* *'Our analysis in .... revealed that even slight deviations lead to substantial impairments in the spatial upsampling'* - refer to placement error of microphones and the position of the speaker's head. 
+* Proceed to describe the upsampling algorithm -- which I skipped reading in too much detail. 
+
+## Results
+
+
+## Discussion 
+
+
+### Comments
+* Novelty of paper lies in applying the upsampling scheme to human voice directionality measurements. 
+* Will the same method work for birds - in principle yes I guess? (similar time scales, frequency ranges etc.)
+* Attempt to get rid of reflections from the floor by using an impulse response based method with a length truncation. How valid is this when the room is not fully anechoic? 
+* 
+
