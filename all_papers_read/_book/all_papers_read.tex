@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -36,12 +36,13 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={Notes of all papers read so far},
+  pdftitle={Cognitive map-based navigation in wild bats revealed by a new high- throughput tracking system},
   pdfauthor={Thejasvi Beleyur},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -50,7 +51,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -68,12 +69,15 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
-\title{Notes of all papers read so far}
+\title{Cognitive map-based navigation in wild bats revealed by a new high- throughput tracking system}
 \author{Thejasvi Beleyur}
-\date{Last Updated : 2021-05-31}
+\date{Last Updated : 2022-01-19}
 
 \begin{document}
 \maketitle
@@ -155,6 +159,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Results}\label{results}}
 
 \begin{itemize}
+\tightlist
 \item
   Bats exhibited straight tracks, which is indicative of goal-directed behabiou
 \item
@@ -205,6 +210,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Introduction, Methods, Results}\label{introduction-methods-results}}
 
 \begin{itemize}
+\tightlist
 \item
   Whether animals navigate using 'maps'or not remains a question. The ability to take shortcuts, or direct routes between two points is a hallmark of map based navigation.
 \item
@@ -242,6 +248,7 @@ If in RStudio, with the correct R environment in place, then:
 \subsection{Comments}\label{comments-1}}
 
 \begin{itemize}
+\tightlist
 \item
   `How animals navigate over large-scale environments remains a riddle', first line of the abstract starts with a rather bold statement. Is this statement really true for all animals, am under the impression that there is a large body of work for at least some animals.
 \item
@@ -392,6 +399,7 @@ If in RStudio, with the correct R environment in place, then:
 \subsection{Comments}\label{comments-2}}
 
 \begin{itemize}
+\tightlist
 \item
   authors state \emph{`Although referred to as jamming avoidance.., support for this interpretation is not as strong as that for the jamming avoidance response in electric fish'}. They also go on to state that labortatory studies seem to have `met with some success'. In general, does this support the fact that bats in the field may actually not be showing dramatic changes in calls at all - it's only when they're put into a quiet unusual lab context that they begin to show changes. Perhaps, this strong response is seen because the animals have gotten used to flying under quiest conditions, and are now suddenly challenged?
 \item
@@ -543,6 +551,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Results}\label{results-4}}
 
 \begin{itemize}
+\tightlist
 \item
   The author showed (I guess for the first time then) that \emph{R. hardwickei} can actually modulate its echolocation calls, ie. by showing that the calls change over the course of a landing from classical quasi-CF to very FM
 \item
@@ -588,6 +597,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Introduction}\label{introduction-2}}
 
 \begin{itemize}
+\tightlist
 \item
   Bats of one species seem to show echolocation in a `common frequency band', ie. all measured bats calling within a 3kHz bandwidth
 \item
@@ -627,6 +637,7 @@ If in RStudio, with the correct R environment in place, then:
   \emph{Triaenops afer}
 
   \begin{itemize}
+  \tightlist
   \item
     This species also showed a bimodal distribution of CF at either 79 or 88 kHz
   \item
@@ -641,6 +652,7 @@ If in RStudio, with the correct R environment in place, then:
 \subsection{Comments}\label{comments-3}}
 
 \begin{itemize}
+\tightlist
 \item
   interesting to see how tricky it was back then to determine the peak CF frequency, something we do so routinely with a quick FFT nowadays. Pye had to visualise Lissajous figures, (comparing the CF call recordings with signals of known frequency )
 \item
@@ -777,6 +789,7 @@ If in RStudio, with the correct R environment in place, then:
 \subsection{Call intensitites and acoustic analysis}\label{call-intensitites-and-acoustic-analysis}}
 
 \begin{itemize}
+\tightlist
 \item
   Done with a B \& K mic placed 1m away fromt he bat's head - \emph{this is a pretty neat and direct way to do it because this is a perching bat anyways!!} \ldots{} though, the clutter caused by the mic being right in front of the bat \ldots hmmm\ldots{}
 \item
@@ -1074,6 +1087,7 @@ If in RStudio, with the correct R environment in place, then:
 \subsection{Comments}\label{comments-6}}
 
 \begin{itemize}
+\tightlist
 \item
   the possibility of extreme samples contributing to low p-values, may also lead to a dramatic effect size. In some sense, there may be no \emph{statistical} way to overcome this problem - the only way to resolve this situation may be to increase sample size?
 \item
@@ -1130,6 +1144,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Methods}\label{methods-8}}
 
 \begin{itemize}
+\tightlist
 \item
 \end{itemize}
 
@@ -1191,6 +1206,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Methods}\label{methods-9}}
 
 \begin{itemize}
+\tightlist
 \item
   Authors test if 1) only the lowest paer of FM1 frequencies are required for delay perception 2) unclear what is being \emph{tested} here..\emph{`Second, the small, seemingly not very effective, size of the frequency hopping by just a few kilohertz \ldots.suggests that the hypothesized necessity of these lowest FM1 frequencies may be the key to why the harmonics are processed asymmetrically'}
 \item
@@ -1271,6 +1287,7 @@ If in RStudio, with the correct R environment in place, then:
 (Leonie leading, and other group members commenting)
 
 \begin{itemize}
+\tightlist
 \item
   As the authors state, when the low pass is at 20kHz -there should be no
   double glint echo (silence on one side), which means the bats only choose the double glint,
@@ -1784,6 +1801,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Methods}\label{methods-12}}
 
 \begin{itemize}
+\tightlist
 \item
   Bats had to fly in a `S' shaped flight path, the flight path was created with 2 types of walls: acoustically permeable and acoustically inpermeable.
 
@@ -1813,6 +1831,7 @@ If in RStudio, with the correct R environment in place, then:
 \section{Results}\label{results-12}}
 
 \begin{itemize}
+\tightlist
 \item
   \emph{`Overall, the statistical models that we describe in the Methods and Materials section\ldots fit the data well and explain more variance than the respective null models with..'} - not really necessary, and not in context of any particular results
 \item
@@ -2026,76 +2045,6 @@ If in RStudio, with the correct R environment in place, then:
   Intersting that in this `report' they talk about how they have just obtained funding from the `Notgemeinschaft der Deutschen Wissenschaft' and, that they will publish the discussed results in detail in the `Zeitschrift fuer vergleichende Physiologie' (Now Journal of Comparitive Physiology)
 \end{itemize}
 
-\hypertarget{mair-et-al.-2020-environ.-toxicol.-chem.}{%
-\chapter{\texorpdfstring{Mair et al.~2020, \emph{Environ. Toxicol. Chem.}}{Mair et al.~2020, Environ. Toxicol. Chem.}}\label{mair-et-al.-2020-environ.-toxicol.-chem.}}
-
-\chaptermark{Minimum detectable difference}
-
-\emph{The minimum detectable difference (MDD) Concept for Establishing TRust in Nonsignificant REsults: A Critical Review} \citep{mair2020minimum}
-
-\begin{itemize}
-\tightlist
-\item
-  \emph{notes taken on 2020-12-04/07}
-\end{itemize}
-
-\hypertarget{introduction-14}{%
-\section{Introduction}\label{introduction-14}}
-
-\begin{itemize}
-\tightlist
-\item
-  Paper is set in context of agriculture and aquatic ecology practices - where treatments with a chemical/pesticide are compared with controls without. A non-significant result is taken to mean no a negligible effect
-\item
-  Acceptable concentrations are set by the concentration where the transition occurs from non-significant to significant.
-\item
-  Using signficance to determine acceptable concentrations is problematic because the significance depends strongly on the power of the statistical setup. Since many experiments, esp.~mesocosm experiments are low-sample size exercises, power is of even more concern.
-\item
-  Pre-experimental power calculations can be used to calculate a minimum required sample size to detect a certain effect. Post-experimental `post-hoc' power calculations can be used to estimate power. Post-hoc power calculations are problematic because the effect size is typically estimated from the low-sample sized data itself -- and thus doesn't always add new information.
-\end{itemize}
-
-\hypertarget{minimum-detectable-effect-mde}{%
-\subsection{Minimum detectable effect (MDE)}\label{minimum-detectable-effect-mde}}
-
-\begin{itemize}
-\tightlist
-\item
-  MDE is an alternative to post-hoc power calculations
-\item
-  MDE uses `the estimated variance in the data for calculating the effeect size that could have been detected with a specified power..' - but this method sometimes produces counterintuitive results.
-\end{itemize}
-
-\hypertarget{minimum-detectable-difference-mdd}{%
-\subsection{Minimum detectable difference (MDD)}\label{minimum-detectable-difference-mdd}}
-
-\begin{itemize}
-\tightlist
-\item
-  The `effect size that would have been just significant considering the sample size and variance measured in a conducted experiment'
-\item
-  pMDD proportional MDD is calculated with the mean value as reference
-\end{itemize}
-
-\hypertarget{approaches-to-control-type-ii-error-rates-post-hoc}{%
-\subsection{Approaches to control type II error rates post hoc}\label{approaches-to-control-type-ii-error-rates-post-hoc}}
-
-\begin{itemize}
-\item
-  MDE : one issue with MDE is that the variance in the data is assumed to be representative of the population variance. One issue with MDE is that it neglects the estimated effect size.
-\item
-  MDD :
-  \#\# Methods
-\end{itemize}
-
-\hypertarget{results-13}{%
-\section{Results}\label{results-13}}
-
-\hypertarget{discussion-7}{%
-\section{Discussion}\label{discussion-7}}
-
-\hypertarget{comments-12}{%
-\subsection{Comments}\label{comments-12}}
-
 \hypertarget{morey-et-al.-2016-psychon-bull-rev}{%
 \chapter{Morey et al.~2016, Psychon Bull Rev}\label{morey-et-al.-2016-psychon-bull-rev}}
 
@@ -2184,8 +2133,8 @@ If in RStudio, with the correct R environment in place, then:
 
 (Did not fully follow either of the examples, and so didn't make notes!)
 
-\hypertarget{discussion-8}{%
-\section{Discussion}\label{discussion-8}}
+\hypertarget{discussion-7}{%
+\section{Discussion}\label{discussion-7}}
 
 \begin{itemize}
 \tightlist
@@ -2232,6 +2181,7 @@ If in RStudio, with the correct R environment in place, then:
   \begin{enumerate}
   \def\labelenumi{\arabic{enumi}.}
   \setcounter{enumi}{3}
+  \tightlist
   \item
   \end{enumerate}
 \end{itemize}
@@ -2249,8 +2199,8 @@ If in RStudio, with the correct R environment in place, then:
   \emph{notes taken on 2021-05-31}
 \end{itemize}
 
-\hypertarget{introduction-15}{%
-\section{Introduction}\label{introduction-15}}
+\hypertarget{introduction-14}{%
+\section{Introduction}\label{introduction-14}}
 
 \begin{itemize}
 \tightlist
@@ -2292,8 +2242,8 @@ If in RStudio, with the correct R environment in place, then:
   The paired experiments dont for 8 bats, and 16 pairs --\textgreater{} (some bats had to be repeated in this design, not mentioned here!, how were the bats chosen?)
 \end{itemize}
 
-\hypertarget{results-14}{%
-\section{Results}\label{results-14}}
+\hypertarget{results-13}{%
+\section{Results}\label{results-13}}
 
 \hypertarget{frest-results}{%
 \section{Frest results}\label{frest-results}}
@@ -2310,8 +2260,8 @@ If in RStudio, with the correct R environment in place, then:
   Of the 48(16x3) paired flights recorded, 29 of them showed \(\Delta\)Frest that were smaller than during single flights. Authors also found that 7 trials showed a 'significant increase in \(\Delta F\)s during paired flights* --\emph{See Criticism}
 \end{itemize}
 
-\hypertarget{discussion-9}{%
-\section{Discussion}\label{discussion-9}}
+\hypertarget{discussion-8}{%
+\section{Discussion}\label{discussion-8}}
 
 \begin{itemize}
 \tightlist
@@ -2360,8 +2310,8 @@ The cleaned plots suggest that individual bats may not really be responding in a
   Data re-analysis approach: request the authors for the raw Fref measurements and perform some kind of linear mixed-model analysis to actually see if any of the `treatments' (S1, P1, P2, P3, S2) actually has any effect on each bats Fref. If there is an effect of paired flight, one should see a systematic increase/decrease in the Fref for each bat.
 \end{itemize}
 
-\hypertarget{comments-13}{%
-\subsection{Comments}\label{comments-13}}
+\hypertarget{comments-12}{%
+\subsection{Comments}\label{comments-12}}
 
 \begin{itemize}
 \tightlist
@@ -2371,6 +2321,297 @@ The cleaned plots suggest that individual bats may not really be responding in a
   \emph{`..(bat \#908 was eliminated due to an unnatural decrease after 60 days).'} - this is an uninformative statement. Why was it considered `unnatural', and it would also bias the results perhaps. The motivation to remove this individual from the experiment/analysis is not clear. If anything at all, as long as it could fly normally - this individual is proof that perhaps \emph{R. ferrumequinum nippon} shows extreme fluctuations in Frest.
 \item
   The authors do not check for a kind of `memory' effect, where the \(\Delta\)F could have been compared across S1 and S2. Here too, just from looking at Fig. 4, it doesn't seem like there is one - with Fig 4b showing more difference for S1, and less difference in S2 - but Fig.4a showing apparent differences in both S1 and S2.
+\end{itemize}
+
+\hypertarget{kaya-elhilali-2016}{%
+\chapter{Kaya \& Elhilali 2016}\label{kaya-elhilali-2016}}
+
+\chaptermark{Modelling auditory attention}
+
+\emph{Modelling auditory attention} (review) \citep{kaya2017modelling}
+
+\begin{itemize}
+\item
+  \emph{notes taken on 2021-08-24}
+\item
+  Attention is not a unidirectional process - has `bottom-up' and `top-down' processes in play
+\item
+  The relevance of a sound is modulated by the auditory scence (eg. explosion - a conspicuous sound) or the task to be accomplished (listening to a speaker call in a crowded area).
+\item
+  Our auditory experiences can alter the receptive fields of individual neurons and thus have cortical-level effects.
+\item
+  In contrast to visual attention, modelling has been lagging behind in auditory attention .
+\end{itemize}
+
+\hypertarget{models-of-auditory-attention}{%
+\section{Models of auditory attention}\label{models-of-auditory-attention}}
+
+\hypertarget{bottom-up-attention}{%
+\subsection{Bottom-up attention}\label{bottom-up-attention}}
+
+\begin{itemize}
+\tightlist
+\item
+  Not too many top-down models out there
+\item
+  Few of the existing models convert audio data into time-frequency maps, and then predict saliency by looking at modulations of features that stimulate neurons in mammalian auditory cortex.
+\item
+  The issue with time-frequency type models is that they don't consider how the sequence of events affects attentive processing. The order of sounds and their saliency is important -eg. a quietish set of sounds followed by a loud one. The loud sound gets attention. If reversed, the silent sound doesn't get as much attention.
+\item
+  Next gen. of models performed a more limited type of input-reception, using the sounds heard till now to decide the saliency of received sounds at each point.
+\end{itemize}
+
+\hypertarget{top-down-attention}{%
+\section{Top-down attention}\label{top-down-attention}}
+
+\begin{itemize}
+\tightlist
+\item
+  Top-down models are informed by a large body of work using neural basis of task-driven attention.
+\item
+  Hubel et al.~in the 1950's found `attention unit' neurons that responded to new/surprising sounds such as jangling of keys etc.
+\item
+  The `spectro-temporal receptive fields' (STRFs) of neurons reveal the response of neurons to sounds. The behavioural goals of an animal alter the STRFs of neurons quickly. Furhter experimental work using magnetoencephalography and surface electrodes allow characterisation of whole brain activation while listenting to sounds.
+\item
+  Modelling the STRF adaption has been one avenue of work - eg. suggesting that STRFs adapt to have the highest signal-background difference.
+\item
+  `Reverse modelling' has also been performed - starting from the neural spikes back to reconstructing the heard sounds - which correlated most with the spectro-temporal regions of highest energy in the attended sounds.
+\end{itemize}
+
+\hypertarget{validation-of-auditory-attention-models}{%
+\section{Validation of auditory attention models}\label{validation-of-auditory-attention-models}}
+
+\begin{itemize}
+\tightlist
+\item
+  Visual attention is greatly aided by eye-tracking data - which allows quantitative description of visual salience
+\item
+  Auditory attention curently lacks the visual equivalent of eye-tracking
+
+  \begin{itemize}
+  \tightlist
+  \item
+    MEG and EEG work well with humans but need better analytical tools to process the data
+  \item
+    single-unit recordings are too invasive to be carried out regularly on animals or humans
+  \item
+    human subjects annotating saliency is too slow and `conscious' in comparison to the `automatic' nature of eye-tracking
+  \end{itemize}
+\end{itemize}
+
+\hypertarget{applications-of-auditory-attention-models}{%
+\section{Applications of auditory attention models}\label{applications-of-auditory-attention-models}}
+
+\begin{itemize}
+\tightlist
+\item
+  computational techniques still fail at tasks that are simple for humans - telling apart speech from noise.
+\item
+  using auditory attention models to guide the computational tools could help improve automated sound labelling/recognition
+\item
+  brain-computer interfaces will also benefit from attentional models
+\end{itemize}
+
+\hypertarget{bermant-2021-sci.-rep.}{%
+\chapter{Bermant 2021, Sci. Rep.}\label{bermant-2021-sci.-rep.}}
+
+\chaptermark{BioCPP - source separation network}
+
+\emph{BioCPPNet: automatic bioacoustic source separation with deep neural networks} \citep{bermant_biocppnet_2021}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2021-12-09}
+\end{itemize}
+
+\hypertarget{introduction-15}{%
+\section{Introduction}\label{introduction-15}}
+
+\begin{itemize}
+\tightlist
+\item
+  Human speech separation has a series of developed methods
+\item
+  Animal vocalisations often have overlapping sounds, and because there's `no formal method' to analyse overlapping sounds - biologists often don't analyse such data -- very well made point.
+\item
+\end{itemize}
+
+\hypertarget{methods-14}{%
+\section{Methods}\label{methods-14}}
+
+\hypertarget{results-14}{%
+\section{Results}\label{results-14}}
+
+\hypertarget{discussion-9}{%
+\section{Discussion}\label{discussion-9}}
+
+\hypertarget{comments-13}{%
+\subsection{Comments}\label{comments-13}}
+
+\hypertarget{poerschmann-arend-2021-yyyy-jasa}{%
+\chapter{\texorpdfstring{Poerschmann \& Arend 2021 YYYY, \emph{JASA}}{Poerschmann \& Arend 2021 YYYY, JASA}}\label{poerschmann-arend-2021-yyyy-jasa}}
+
+\chaptermark{Human voice directionality}
+
+\emph{Investigating phoneme-dependencies of spherical voice directivity patterns} \citep{porschmann2021investigating}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2022-01-05}
+\end{itemize}
+
+\hypertarget{introduction-16}{%
+\section{Introduction}\label{introduction-16}}
+
+\begin{itemize}
+\tightlist
+\item
+  knowledge of voice directionality is old - and this has been investigated to great detail comparing vowels, effect of sex, voice dynamics, etc.
+\item
+  Very few `full-spherical' measurements of the human voice - previous studies typically took separate measurements at each angle using pairs of mics (reference on-axis vs angled)
+\item
+  Full-spherical measurements allow a dynamic snapshot of sound directivity over an utterance
+\item
+  To generate a spherical directivity map from a few microphones however means upsampling a highly variable `signal' without introducing too many artifacts.
+\item
+  Authors came up with the spatial upsampling by directional equalization (SUpDEq) in previous work - and this can be used to generate reliable upsampled spherical maps \textless{} 8 kHz (w \textless4 dB error using a 32 channel pentakis dodecahedron array)
+\item
+\end{itemize}
+
+\hypertarget{methods-15}{%
+\section{Methods}\label{methods-15}}
+
+\begin{itemize}
+\tightlist
+\item
+  Measurements made in the anechoic chamber of TH Koeln w dimensions of 4.5 x 11.7 x 2.3 m (wbh)
+\item
+  32 mics placed over a 2 m diameter pentakis dodecahedron
+\item
+  Subject's head aligned using cross-hair lasers
+\item
+  Subjects sang glissandos (same vowel with increasing pitch)
+\item
+  `In general, the directivity analysis can be based either on time frames of the voice signals or on impulse responses determined for the articulation of different phonemes, which is the approach we took in this study' -- \emph{not familiar with this method}
+\item
+  Also add another extension where they specially consider the problem of \textless= 200 Hz sound being reflected around in the room, and thus shorten the impulse response to 128 samples to account for boundary reflections. Would be great to see their code in general to understand the exact signal processing steps they take.
+\item
+  \emph{`Our analysis in \ldots. revealed that even slight deviations lead to substantial impairments in the spatial upsampling'} - refer to placement error of microphones and the position of the speaker's head.
+\item
+  Proceed to describe the upsampling algorithm -- which I skipped reading in too much detail.
+\end{itemize}
+
+\hypertarget{results-15}{%
+\section{Results}\label{results-15}}
+
+\hypertarget{discussion-10}{%
+\section{Discussion}\label{discussion-10}}
+
+\hypertarget{comments-14}{%
+\subsection{Comments}\label{comments-14}}
+
+\begin{itemize}
+\tightlist
+\item
+  Novelty of paper lies in applying the upsampling scheme to human voice directionality measurements.
+\item
+  Will the same method work for birds - in principle yes I guess? (similar time scales, frequency ranges etc.)
+\item
+  Attempt to get rid of reflections from the floor by using an impulse response based method with a length truncation. How valid is this when the room is not fully anechoic?
+\item
+\end{itemize}
+
+\hypertarget{garcia-et-al.-2021-nature-communications}{%
+\chapter{\texorpdfstring{Garcia et al.~2021, \emph{Nature Communications}}{Garcia et al.~2021, Nature Communications}}\label{garcia-et-al.-2021-nature-communications}}
+
+\chaptermark{Evolution of woodpecker drumming}
+
+\emph{Evolution of communication signals and information during species radiation} \citep{garcia2020evolution}
+
+\begin{itemize}
+\tightlist
+\item
+  \emph{notes taken on 2022-01-18}
+\end{itemize}
+
+\hypertarget{introduction-17}{%
+\section{Introduction}\label{introduction-17}}
+
+\begin{itemize}
+\item
+  \emph{`Despite decades of investigation, however, whether signals are under strong selection for species recognition,'}
+\item
+  Authors focus on woodpecker drumming - `used to communicate species identity in territorial and mating contexts'
+\item
+  *we predicted (1) that signal structure has
+  evolved to at least maintain, and potentially increase, speciesspecific information during the clade radiation, and (2) that drumming signals provide sufficient information to allow receivers to discriminate conspecifics from sympatric woodpecker species' -- would be nice to know if the authors truly predicted this beforehand, or are using the conventional formulation
+\item
+  To understand how drumming pattern evolved across species, authors quantify:
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \tightlist
+  \item
+    the patterns across many species
+  \item
+    perform evol reconstruction along with information theoretical tools
+  \item
+    run behavioural experiments in the field
+  \item
+  \end{enumerate}
+\end{itemize}
+
+\hypertarget{results-16}{%
+\section{Results}\label{results-16}}
+
+\begin{itemize}
+\item
+  \emph{`Given the variation in acoustic structure of drumming patterns across the woodpecker family, we predicted that a bird species could be identified based on its drumming alone and used information theory to quantify the upper limit of one's performance in this species discrimination task'} -- again this type of `definitive' phrasing. bugs me because it's not clear if the authors already knew the patterns were informative or not.
+\item
+  \emph{The average rate of correct classification was 16.5\%, significantly above what is expected by chance (chance = 1/number of species = 1.09\%;} -- this is a very low fraction, and a rather poor classifier using DFA.
+\item
+  Weird interpretation, considering they only ran \emph{one} classifier to come to this statement. \emph{and yet that within the woodpeckers' clade, a randomly chosen drum can have a high probability of being attributed to a wrong species.}
+\end{itemize}
+
+\hypertarget{methods-16}{%
+\section{Methods}\label{methods-16}}
+
+\begin{itemize}
+\tightlist
+\item
+  No mention of sample size range here (\emph{We retained 736 high-quality drums suitable for further analyses. These drums were distributed among 92 species}) - did they have \textasciitilde8 samples per species, what was the skew like?
+\item
+  Authors calculate a normalised Mutual Information (MI) - which ranges between 0-100\%, where they normalise each species mutual information with reference to the max possible MI (`ceiling' MI) of \(log_{2}(92)=6.52\) -- is this okay to do, considering that MI is in
+  bits. Or did the authors then \emph{not} take the \(log_{2}\) of the species number.
+\item
+  Speakers calibrated to have 80 dB (SPL?) at 1m, and playbacks performed at \textasciitilde50m distance from birds --\textgreater{} \textasciitilde{} 46 dB SPL received level - is this typical? The \href{https://www.researchgate.net/figure/Bird-Hearing-Thresholds-Median-bird-hearing-thresholds-from-49-bird-species-measured_fig5_228381219}{median bird} level goes all the way upto 50 dB SPL for the lower frequencies \ldots{}
+\item
+  `Playbacks started at about 50 m from where the' -- what was the range of this data, why wasn't it reported?, also the same with the speaker playback level, `at about 80 dB' - why isn't there a range.
+\item
+  The `analytical simulations of selection for information' portion seems to lack detail on how exactly the model was implemented - for a non-specialist
+\item
+\end{itemize}
+
+\hypertarget{discussion-11}{%
+\section{Discussion}\label{discussion-11}}
+
+\hypertarget{comments-15}{%
+\subsection{Comments}\label{comments-15}}
+
+\begin{itemize}
+\tightlist
+\item
+  Rather densely written paper. Tough to get into. These are the points when I wonder if I'm not knowledgeable enough to make sense of this paper - or if it realy does lack a bunch of details that could provide context.
+\item
+  How well do information-theory based tools actually quantify what birds consider relevant/ are capable of discriminating
+\item
+  A lot of reference to the specific R functions rather than the actual tasks/tests that these functions execute! This like saying `we watched the movie by press the triangular button in our player' - instead of saying `we pressed the play button'
+\item
+  The APC for this journal was \textasciitilde4.5 K Eu + local taxes :O
+\item
+  `Full script is available on demand' -- but then the code is available as a Github repo, bit confusing. Also, GitHub is not a long term place for data or code.
 \end{itemize}
 
 \hypertarget{authors-et-al.-yyyy-j.-sthing.-sthing.}{%
@@ -2386,20 +2627,20 @@ The cleaned plots suggest that individual bats may not really be responding in a
   \emph{notes taken on YYYY-MM-DD}
 \end{itemize}
 
-\hypertarget{introduction-16}{%
-\section{Introduction}\label{introduction-16}}
+\hypertarget{introduction-18}{%
+\section{Introduction}\label{introduction-18}}
 
-\hypertarget{methods-14}{%
-\section{Methods}\label{methods-14}}
+\hypertarget{methods-17}{%
+\section{Methods}\label{methods-17}}
 
-\hypertarget{results-15}{%
-\section{Results}\label{results-15}}
+\hypertarget{results-17}{%
+\section{Results}\label{results-17}}
 
-\hypertarget{discussion-10}{%
-\section{Discussion}\label{discussion-10}}
+\hypertarget{discussion-12}{%
+\section{Discussion}\label{discussion-12}}
 
-\hypertarget{comments-14}{%
-\subsection{Comments}\label{comments-14}}
+\hypertarget{comments-16}{%
+\subsection{Comments}\label{comments-16}}
 
   \bibliography{book.bib}
 

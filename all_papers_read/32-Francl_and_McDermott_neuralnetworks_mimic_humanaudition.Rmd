@@ -1,0 +1,23 @@
+# Francl & McDermott 2022, *Nature Human Behaviour*
+
+\chaptermark{Neural nets mimic human audition}
+
+*Deep neural network models of sound localization reveal how perception is adapted to real-world environments* [@francl_deep_2022]
+
+- *notes taken on 2022-01-28*
+
+## Introduction
+
+
+## Methods
+
+
+## Results
+
+
+## Discussion 
+
+
+### Comments
+
+

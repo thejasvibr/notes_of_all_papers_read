@@ -1,0 +1,46 @@
+# Garcia et al. 2021, *Nature Communications*
+
+\chaptermark{Evolution of woodpecker drumming}
+
+*Evolution of communication signals and information during species radiation* [@garcia2020evolution]
+
+- *notes taken on 2022-01-18*
+
+## Introduction
+
+* *'Despite decades of investigation, however, whether signals are under strong selection for species recognition,'*
+* Authors focus on woodpecker drumming - 'used to communicate species identity in territorial and mating contexts'
+* *we predicted (1) that signal structure has
+evolved to at least maintain, and potentially increase, speciesspecific information during the clade radiation, and (2) that drumming signals provide sufficient information to allow receivers to discriminate conspecifics from sympatric woodpecker species' -- would be nice to know if the authors truly predicted this beforehand, or are using the conventional formulation
+
+* To understand how drumming pattern evolved across species, authors quantify:
+	1. the patterns across many species
+	2. perform evol reconstruction along with information theoretical tools 
+	3. run behavioural experiments in the field
+	4. 
+
+## Results
+
+* *'Given the variation in acoustic structure of drumming patterns across the woodpecker family, we predicted that a bird species could be identified based on its drumming alone and used information theory to quantify the upper limit of one’s performance in this species discrimination task'* -- again this type of 'definitive' phrasing. bugs me because it's not clear if the authors already knew the patterns were informative or not. 
+
+* *The average rate of correct classification was 16.5%, significantly above what is expected by chance (chance = 1/number of species = 1.09%;* -- this is a very low fraction, and a rather poor classifier using DFA. 
+
+* Weird interpretation, considering they only ran *one* classifier to come to this statement. *and yet that within the woodpeckers’ clade, a randomly chosen drum can have a high probability of being attributed to a wrong species.*
+
+## Methods
+
+* No mention of sample size range here (*We retained 736 high-quality drums suitable for further analyses. These drums were distributed among 92 species*) - did they have ~8 samples per species, what was the skew like? 
+* Authors calculate a normalised Mutual Information (MI) - which ranges between 0-100%, where they normalise each species mutual information with reference to the max possible MI ('ceiling' MI) of $log_{2}(92)=6.52$ -- is this okay to do, considering that MI is in bits. Or did the authors then *not* take the $log_{2}$ of the species number.
+* Speakers calibrated to have 80 dB (SPL?) at 1m, and playbacks performed at ~50m distance from birds --> ~ 46 dB SPL received level - is this typical? The [median bird](https://www.researchgate.net/figure/Bird-Hearing-Thresholds-Median-bird-hearing-thresholds-from-49-bird-species-measured_fig5_228381219) level goes all the way upto 50 dB SPL for the lower frequencies ...
+* 'Playbacks started at about 50 m from where the' -- what was the range of this data, why wasn't it reported?, also the same with the speaker playback level, 'at about 80 dB ' - why isn't there a range.
+* The 'analytical simulations of selection for information' portion seems to lack detail on how exactly the model was implemented - for a non-specialist
+
+## Discussion 
+
+
+### Comments
+* Rather densely written paper. Tough to get into. These are the points when I wonder if I'm not knowledgeable enough to make sense of this paper - or if it realy does lack a bunch of details that could provide context. 
+* How well do information-theory based tools actually quantify what birds consider relevant/ are capable of discriminating
+* A lot of reference to the specific R functions rather than the actual tasks/tests that these functions execute! This like saying 'we watched the movie by press the triangular button in our player' - instead of saying 'we pressed the play button'
+* The APC for this journal was ~4.5 K Eu + local taxes :O
+* 'Full script is available on demand' -- but then the code is available as a Github repo, bit confusing. Also, GitHub is not a long term place for data or code.
